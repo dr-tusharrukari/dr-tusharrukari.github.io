@@ -14,9 +14,9 @@ interface VisitorModalProps {
 export function VisitorModal({ isOpen, onClose, stats, isLoading, onRefresh }: VisitorModalProps) {
   if (!isOpen) return null;
 
-  const totalVisits = stats?.totalVisits ?? 1582;
-  const uniqueVisitors = stats?.uniqueVisitors ?? 1201;
-  const todayVisits = stats?.todayVisits ?? 34;
+  const totalVisits = stats?.totalVisits ?? 1584;
+  const uniqueVisitors = stats?.uniqueVisitors ?? 1203;
+  const todayVisits = stats?.todayVisits ?? 36;
   const lastUpdated = stats?.lastVisitedAt ? new Date(stats.lastVisitedAt).toLocaleTimeString() : 'Just now';
 
   return (

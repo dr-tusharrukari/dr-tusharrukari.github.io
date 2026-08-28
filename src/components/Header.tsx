@@ -118,7 +118,7 @@ export default function Header({
               </span>
               <Eye className="w-3.5 h-3.5 text-brand-primary" />
               <span className="font-semibold text-slate-800 dark:text-slate-200">
-                {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,582'}
+                {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,584'}
               </span>
             </button>
 
@@ -143,7 +143,7 @@ export default function Header({
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <Eye className="w-3.5 h-3.5 text-brand-primary" />
               <span className="font-semibold text-xs">
-                {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,582'}
+                {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,584'}
               </span>
             </button>
 

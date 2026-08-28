@@ -2,14 +2,24 @@ import { VisitorStats } from '../types';
 import defaultStatsData from '../data/visitorStats.json';
 
 const BASE_STATS: VisitorStats = {
-  totalVisits: defaultStatsData.totalVisits || 1582,
-  uniqueVisitors: defaultStatsData.uniqueVisitors || 1201,
-  todayVisits: defaultStatsData.todayVisits || 34,
+  totalVisits: defaultStatsData.totalVisits || 1584,
+  uniqueVisitors: defaultStatsData.uniqueVisitors || 1203,
+  todayVisits: defaultStatsData.todayVisits || 36,
   lastVisitedAt: new Date().toISOString()
 };
 
 const STORAGE_KEY = 'tushar_portfolio_visitor_stats_v3';
 const SESSION_HIT_KEY = 'tushar_portfolio_session_recorded_v3';
+
+// Clear legacy cached counts if present
+try {
+  localStorage.removeItem('tushar_static_views');
+  localStorage.removeItem('tushar_static_unique');
+  localStorage.removeItem('tushar_portfolio_visitor_stats');
+  localStorage.removeItem('tushar_portfolio_visitor_stats_v2');
+} catch {
+  // Ignore
+}
 
 // Public distributed cloud counter namespace for real-time GitHub Pages & Live deployments
 const CLOUD_COUNTER_ENDPOINT = 'https://api.counterapi.dev/v1/dr-tusharrukari-academic/visits';
