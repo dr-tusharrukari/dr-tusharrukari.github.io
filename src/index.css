@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "Fira Code", monospace;
+
+  /* Theme color overrides to match Frosted Glass indigo/purple aesthetic */
+  --color-brand-primary: #6366f1;
+  --color-brand-accent: #8b5cf6;
+  --color-brand-highlight: #ec4899;
+}
+
+:root {
+  --bg-color: #030712;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #0d0e1a 0%, #040407 100%);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-bg-hover: rgba(255, 255, 255, 0.06);
+  --card-hover-surface: rgba(13, 17, 28, 0.94);
+  --panel-bg: rgba(255, 255, 255, 0.04);
+  --panel-heavy-bg: rgba(255, 255, 255, 0.07);
+  --badge-bg: rgba(99, 102, 241, 0.1);
+  --badge-text: #c7d2fe;
+  --input-bg: rgba(255, 255, 255, 0.02);
+  --btn-bg: #121214;
+  --shmear-opacity: 0.32;
+  --scrollbar-track: #030712;
+  --grid-line-color: rgba(31, 41, 55, 0.05);
+  --glow-shadow: 0 16px 40px -10px rgba(155, 81, 224, 0.38), 0 0 25px rgba(66, 133, 244, 0.22);
+}
+
+.light-theme {
+  --bg-color: #f8fafc;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #ffffff 0%, #f0f4f9 100%);
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --border-color: rgba(15, 23, 42, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-bg-hover: rgba(255, 255, 255, 0.95);
+  --card-hover-surface: rgba(255, 255, 255, 0.96);
+  --panel-bg: rgba(255, 255, 255, 0.8);
+  --panel-heavy-bg: rgba(255, 255, 255, 0.9);
+  --badge-bg: rgba(99, 102, 241, 0.08);
+  --badge-text: #4f46e5;
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --btn-bg: #ffffff;
+  --shmear-opacity: 0.22;
+  --scrollbar-track: #f8fafc;
+  --grid-line-color: rgba(15, 23, 42, 0.04);
+  --glow-shadow: 0 16px 35px -10px rgba(66, 133, 244, 0.28), 0 0 20px rgba(155, 81, 224, 0.2);
+}
+
+@layer base {
+  body {
+    background: var(--bg-gradient);
+    color: var(--text-secondary);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease, background 0.5s ease, color 0.5s ease;
+  }
+
+  /* Custom scrollbar matching theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    transition: background-color 0.5s ease;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(155, 81, 224, 0.2);
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(155, 81, 224, 0.4);
+  }
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  transition: background 0.5s ease, border-color 0.5s ease;
+}
+
+.glass-panel-heavy {
+  background: var(--panel-heavy-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-color);
+  transition: background 0.5s ease, border-color 0.5s ease;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  transition: background 0.5s ease, border-color 0.5s ease;
+}
+
+/* Highly robust animated card hover that works on ALL elements (Patents, Books, Publications etc.) */
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.glass-card-hover:hover {
+  background: var(--card-hover-surface);
+  transform: translateY(-4px);
+  box-shadow: var(--glow-shadow);
+  border-color: transparent;
+  background-image: radial-gradient(circle at 50% 0%, rgba(155, 81, 224, 0.08) 0%, var(--card-hover-surface) 70%), 
+                    linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100% 100%, 200% 200%;
+  animation: gradientShift 3s linear infinite;
+}
+
+.light-theme .glass-card-hover:hover {
+  background-image: radial-gradient(circle at 50% 0%, rgba(66, 133, 244, 0.08) 0%, var(--card-hover-surface) 70%), 
+                    linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+}
+
+.glass-input {
+  background: var(--input-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  transition: all 0.5s ease;
+}
+
+.glass-input:hover:not(:focus) {
+  border-color: rgba(155, 81, 224, 0.4);
+  box-shadow: 0 0 12px rgba(155, 81, 224, 0.15);
+}
+
+.glass-input:focus {
+  background: var(--bg-color);
+  outline: none;
+  border-color: transparent;
+  box-shadow: var(--glow-shadow);
+  background-image: linear-gradient(var(--bg-color), var(--bg-color)), 
+                    linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100% 100%, 200% 200%;
+  animation: gradientShift 3s linear infinite;
+}
+
+.glass-badge {
+  background: var(--badge-bg);
+  border: 1px solid var(--border-color);
+  color: var(--badge-text);
+}
+
+.glass-badge-purple {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  color: #ddd6fe;
+}
+
+.light-theme .glass-badge-purple {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: rgba(139, 92, 246, 0.15);
+  color: #7c3aed;
+}
+
+.glass-badge-emerald {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  color: #a7f3d0;
+}
+
+.light-theme .glass-badge-emerald {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.15);
+  color: #059669;
+}
+
+.glass-badge-amber {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  color: #fde68a;
+}
+
+.light-theme .glass-badge-amber {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+}
+
+/* Light theme overrides for global text contrast */
+.light-theme .text-white,
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: var(--text-primary) !important;
+}
+
+.light-theme .text-gray-400 {
+  color: var(--text-secondary) !important;
+}
+
+.light-theme .text-gray-300 {
+  color: var(--text-secondary) !important;
+}
+
+.light-theme .text-slate-300 {
+  color: var(--text-secondary) !important;
+}
+
+.light-theme .text-slate-400 {
+  color: var(--text-secondary) !important;
+}
+
+.light-theme .text-slate-500 {
+  color: var(--text-tertiary) !important;
+}
+
+/* Ensure gradient text is highly visible and elegant in light theme */
+.light-theme .text-transparent,
+.light-theme [class*="text-transparent"] {
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  background-image: linear-gradient(135deg, #1e1b4b 0%, #4338ca 50%, #4f46e5 100%) !important;
+  color: transparent !important;
+}
+
+/* Ensure white text inside active styled elements remains readable */
+.light-theme .gemini-btn *,
+.light-theme .gemini-btn:hover *,
+.light-theme [class*="bg-gradient"] *,
+.light-theme .glass-badge *,
+.light-theme .glass-badge-purple *,
+.light-theme .glass-badge-emerald *,
+.light-theme .glass-badge-amber * {
+  color: inherit !important;
+}
+
+/* Custom visual effects */
+.gemini-text-glow {
+  background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gemini-border-glow {
+  position: relative;
+}
+.gemini-border-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(139, 92, 246, 0.25));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Multitone Gradient Buttons - Animate Gradient Height on Hover */
+.btn-animate-gradient-multitone {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ec4899 0%, #8b5cf6 50%, #4f46e5 100%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease, box-shadow 0.3s ease;
+}
+.btn-animate-gradient-multitone:hover {
+  background-position: top;
+  box-shadow: 0 12px 30px -4px rgba(139, 92, 246, 0.5), 0 0 15px -1px rgba(236, 72, 153, 0.3);
+  transform: translateY(-2px);
+}
+.btn-animate-gradient-multitone:active {
+  transform: translateY(0);
+}
+
+.btn-animate-gradient-emerald {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #10b981 0%, #06b6d4 50%, #3b82f6 100%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease, box-shadow 0.3s ease;
+}
+.btn-animate-gradient-emerald:hover {
+  background-position: top;
+  box-shadow: 0 12px 30px -4px rgba(6, 182, 212, 0.5), 0 0 15px -1px rgba(16, 185, 129, 0.3);
+  transform: translateY(-2px);
+}
+.btn-animate-gradient-emerald:active {
+  transform: translateY(0);
+}
+
+.btn-animate-gradient-secondary {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.btn-animate-gradient-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+.btn-animate-gradient-secondary:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 20px -6px rgba(139, 92, 246, 0.3);
+  transform: translateY(-1px);
+}
+.btn-animate-gradient-secondary:hover::before {
+  opacity: 1;
+}
+
+/* Beautiful Animated Background Shmear (Google Gemini Auroras) */
+.bg-shmear-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -5;
+}
+
+.shmear-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  opacity: var(--shmear-opacity, 0.32);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.light-theme .shmear-blob {
+  filter: blur(100px);
+  mix-blend-mode: multiply;
+  opacity: var(--shmear-opacity, 0.22);
+}
+
+.shmear-1 {
+  background: radial-gradient(circle, #4285f4 0%, #7c3aed 65%, transparent 100%);
+  width: 650px;
+  height: 650px;
+  top: -120px;
+  right: -80px;
+  animation: float-slow-1 22s infinite ease-in-out;
+}
+
+.light-theme .shmear-1 {
+  background: radial-gradient(circle, #60a5fa 0%, #a855f7 65%, transparent 100%);
+}
+
+.shmear-2 {
+  background: radial-gradient(circle, #e91e63 0%, #9b51e0 60%, transparent 100%);
+  width: 580px;
+  height: 580px;
+  top: 32%;
+  left: -180px;
+  animation: float-slow-2 26s infinite ease-in-out;
+}
+
+.light-theme .shmear-2 {
+  background: radial-gradient(circle, #f472b6 0%, #c084fc 60%, transparent 100%);
+}
+
+.shmear-3 {
+  background: radial-gradient(circle, #00d2ff 0%, #4285f4 60%, transparent 100%);
+  width: 540px;
+  height: 540px;
+  bottom: 8%;
+  right: -120px;
+  animation: float-slow-3 24s infinite ease-in-out;
+}
+
+.light-theme .shmear-3 {
+  background: radial-gradient(circle, #38bdf8 0%, #818cf8 60%, transparent 100%);
+}
+
+.shmear-4 {
+  background: radial-gradient(circle, #9b51e0 0%, #ff4081 60%, transparent 100%);
+  width: 520px;
+  height: 520px;
+  bottom: -120px;
+  left: 12%;
+  animation: float-slow-1 20s infinite ease-in-out alternate;
+}
+
+.light-theme .shmear-4 {
+  background: radial-gradient(circle, #c084fc 0%, #fb7185 60%, transparent 100%);
+}
+
+/* Keyframe animations for natural dynamic atmospheric movement */
+@keyframes float-slow-1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(70px, 50px) scale(1.12);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes float-slow-2 {
+  0% {
+    transform: translate(0, 0) scale(1.08);
+  }
+  50% {
+    transform: translate(-50px, 70px) scale(0.92);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.08);
+  }
+}
+
+@keyframes float-slow-3 {
+  0% {
+    transform: translate(0, 0) scale(0.96);
+  }
+  50% {
+    transform: translate(45px, -60px) scale(1.15);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.96);
+  }
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.02) 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.02) 75%
+  );
+  background-size: 200% 100%;
+  animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Gemini Custom Button Styling */
+.gemini-btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: var(--text-primary);
+  background: var(--btn-bg);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.gemini-btn:hover {
+  background: var(--card-hover-surface);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-shadow);
+  border-color: transparent;
+  background-image: linear-gradient(var(--card-hover-surface), var(--card-hover-surface)), 
+                    linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100% 100%, 200% 200%;
+  animation: gradientShift 3s linear infinite;
+  color: var(--text-primary) !important;
+}
+
+.gemini-btn:active {
+  transform: translateY(0);
+}
+
+/* Gemini Navigation Button Styling */
+.gemini-nav-btn {
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.gemini-nav-btn:hover, .gemini-nav-btn.active {
+  background: var(--card-hover-surface);
+  transform: translateY(-1px);
+  box-shadow: var(--glow-shadow);
+  border-color: transparent;
+  background-image: linear-gradient(var(--card-hover-surface), var(--card-hover-surface)), 
+                    linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100% 100%, 200% 200%;
+  animation: gradientShift 3s linear infinite;
+  color: var(--text-primary) !important;
+}
+
+.light-theme .gemini-nav-btn:hover, .light-theme .gemini-nav-btn.active {
+  background-image: linear-gradient(var(--card-hover-surface), var(--card-hover-surface)), 
+                    linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+}
+
+/* Gemini Custom Loader / Shimmer compatible with both dark and light backgrounds */
+.gemini-loader {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(240, 244, 249, 0.06) 25%, rgba(210, 227, 252, 0.22) 50%, rgba(240, 244, 249, 0.06) 75%);
+  background-size: 200% 100%;
+  animation: geminiLoading 1.5s infinite linear;
+}
+
+.light-theme .gemini-loader {
+  background: linear-gradient(90deg, #f0f4f9 25%, #d2e3fc 50%, #f0f4f9 75%);
+  background-size: 200% 100%;
+}
+
+/* Light background compatible fallback */
+.gemini-loader-light {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f0f4f9 25%, #d2e3fc 50%, #f0f4f9 75%);
+  background-size: 200% 100%;
+  animation: geminiLoading 1.5s infinite linear;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes geminiLoading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Gemini profile picture wrapper with hover glow */
+.gemini-profile-glow {
+  position: relative;
+  border-radius: 1.25rem; /* 20px matching rounded-2xl */
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 3px; /* acts as a thin border wrapper */
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.4) 0%, rgba(155, 81, 224, 0.4) 50%, rgba(233, 30, 99, 0.4) 100%);
+}
+
+.gemini-profile-glow:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 3s linear infinite;
+  box-shadow: 0 16px 35px -5px rgba(155, 81, 224, 0.45), 0 0 25px rgba(66, 133, 244, 0.3);
+}
+
+.light-theme .gemini-profile-glow {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.3) 0%, rgba(155, 81, 224, 0.3) 50%, rgba(233, 30, 99, 0.3) 100%);
+}
+
+.light-theme .gemini-profile-glow:hover {
+  background: linear-gradient(135deg, #4285f4 0%, #9b51e0 35%, #e91e63 70%, #00d2ff 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 3s linear infinite;
+  box-shadow: 0 15px 30px -5px rgba(155, 81, 224, 0.3), 0 0 20px rgba(66, 133, 244, 0.2);
+}
+
+

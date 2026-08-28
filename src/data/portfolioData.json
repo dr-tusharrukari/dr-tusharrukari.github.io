@@ -1,0 +1,1228 @@
+{
+  "personal": {
+    "name": "Dr. Tushar Ganpat Rukari",
+    "title": "Assistant Professor & Head, Department of Pharmaceutics",
+    "institution": "Yashwantrao Bhonsale College of Pharmacy",
+    "department": "Department of Pharmaceutics",
+    "location": "Sawantwadi, Maharashtra, India",
+    "qualification": "Ph.D. (Pharmaceutics)",
+    "experienceYears": 15,
+    "publicationsCount": 20,
+    "patentsCount": 4,
+    "guidedUG": 21,
+    "grantsAmount": "₹5,00,000",
+    "email": "tushar.rukari@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/dr-tushar-ganpat-rukari-00940646/",
+    "googleScholar": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+    "orcid": "https://orcid.org/0000-0002-8320-0950",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55617584300",
+    "bio": "A dedicated Pharmacy Academician and Researcher with over 15 years of rich academic and administrative experience. Specializes in advanced pharmaceutics, novel drug delivery systems (NDDS), ocular therapeutics, vesicular drug carriers, and polyherbal formulation designs. Successfully spearheading the Department of Pharmaceutics, mentoring student projects resulting in multiple patents, and driving academic excellence through personalized mentoring.",
+    "aboutStatement": "I believe in bridging the gap between textbook pharmaceutics and real-world clinical applications. My research concentrates on design and development of innovative, scalable, and biocompatible drug delivery carriers to address unmet clinical challenges, especially in novel drug delivery and vesicular carrier systems. As a mentor, I aim to foster curiosity and research-driven thinking among future pharmacy leaders.",
+    "profileImage": "./profile.jpg",
+    "googleScholarStats": {
+      "totalCitations": 98,
+      "hIndex": 7,
+      "i10Index": 5,
+      "lastUpdated": "2026-08-28T13:45:44.273Z"
+    }
+  },
+  "credentials": [
+    {
+      "degree": "Doctor of Philosophy (Ph.D.)",
+      "field": "Pharmaceutics & Pharmaceutical Sciences",
+      "institution": "Savitribai Phule Pune University",
+      "year": "2025",
+      "details": "Dissertation focus on advanced vesicular systems for target-specific drug delivery."
+    },
+    {
+      "degree": "Master of Pharmacy (M.Pharm)",
+      "field": "Pharmaceutics",
+      "institution": "North Maharashtra University, Jalgaon",
+      "year": "2009",
+      "details": "Graduated with First Class. Delayed release drug delivery systems for PPI drugs."
+    },
+    {
+      "degree": "Bachelor of Pharmacy (B.Pharm)",
+      "field": "Pharmaceutical Sciences",
+      "institution": "North Maharashtra University, Jalgaon",
+      "year": "2007",
+      "details": "Excellent academic standing"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Head & Assistant Professor",
+      "institution": "Yashwantrao Bhonsale College of Pharmacy, Sawantwadi",
+      "duration": "2020 - Present",
+      "type": "academic",
+      "description": "Leading the Department of Pharmaceutics. Overseeing academic curriculum delivery, laboratory management, research project guidance, and leading NAAC & NBA accreditation committees. Developed novel research initiatives in ocular drug delivery systems and vesicular carrier designs.",
+      "tags": [
+        "Leadership",
+        "Curriculum Design",
+        "Research Mentoring",
+        "Accreditation"
+      ]
+    },
+    {
+      "role": "I/C Principal",
+      "institution": "Yashwantrao Bhonsale College of Pharmacy D.Pharmacy, Sawantwadi",
+      "duration": "2017 - 2020",
+      "type": "academic",
+      "description": "Held full institutional leadership for a Diploma in Pharmacy program, overseeing academics, compliance, and administration for three academic years.",
+      "tags": [
+        "Teaching",
+        "Administration",
+        "MSBTE Compliance"
+      ]
+    },
+    {
+      "role": "Lecturer",
+      "institution": "VJSM's Group of Institutes, Ale",
+      "duration": "2011 - 2017",
+      "type": "academic",
+      "description": "Delivered undergraduate Pharmaceutics instruction while building foundational experience in academic administration and student mentorship.",
+      "tags": [
+        "Teaching",
+        "Academic Administration",
+        "Mentorship"
+      ]
+    },
+    {
+      "role": "Lecturer",
+      "institution": "JES's College of Pharmacy, Nandurbar",
+      "duration": "2009 - 2011",
+      "type": "academic",
+      "description": "Engaged in classroom teaching, laboratory instruction, and student academic mentoring for undergraduate pharmacy students.",
+      "tags": [
+        "Teaching",
+        "Pharmaceutics",
+        "Lab Instruction",
+        "Student Guidance"
+      ]
+    },
+    {
+      "role": "Industry Research Trainee (Pharmaceutics R&D)",
+      "institution": "M/s Skant Health Care Pvt. Ltd., Vapi, Gujarat",
+      "duration": "2008 - 2009",
+      "type": "industry",
+      "description": "Gained industry exposure to pre-formulation studies, formulation optimization of solid oral dosages, and stability studies of liquid polyherbal formulations.",
+      "tags": [
+        "Pre-formulation",
+        "R&D",
+        "Formulations & Development"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Formulation, Development and Characterization of Ondansetron HCl Buccal Film by Using Natural Polymer",
+      "authors": "Khanolkar C., Rukari T., Bhivshet G., Barse R., Jagtap V.",
+      "journal": "International Journal of Innovative Research in Technology",
+      "year": "2025",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Buccal Film",
+        "Ondansetron HCl",
+        "Natural Polymer"
+      ]
+    },
+    {
+      "title": "Concise Review on Nature's Cure for Kidney Stones: Unveiling the Potential of Surrounding Medicinal Plants",
+      "authors": "Rukari T.G.*, Varadekar M.M., Dhuri P.B., Walke S.S., Kashalikar V.M., Shetye S.S., Jagtap V.A.",
+      "journal": "International Journal of Pharmacognosy",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Kidney Stones",
+        "Medicinal Plants",
+        "Review"
+      ]
+    },
+    {
+      "title": "Niosomes: The Swiss Army Knife of Drug Delivery System—A Comprehensive Review",
+      "authors": "Jadhav S.*, Rukari T., Jagtap V.",
+      "journal": "International Journal of Pharmaceutical Sciences",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Niosomes",
+        "Drug Delivery",
+        "Review"
+      ]
+    },
+    {
+      "title": "Beyond Conventional: Recent Advancements in Floating Drug Delivery Systems—An Approach to Oral Controlled and Sustained Drug Delivery via Gastric Retention",
+      "authors": "Desai H.*, Rukari T., Mahabal R., Jagtap V.",
+      "journal": "International Journal of Pharmaceutical Sciences",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 1,
+      "tags": [
+        "Floating Drug Delivery",
+        "Gastric Retention",
+        "Review"
+      ]
+    },
+    {
+      "title": "Advances in Buccal Film Technology: A Modern Drug Delivery Approach",
+      "authors": "Khanolkar C., Rukari T., Jagtap V.",
+      "journal": "International Journal of Pharmaceutical Sciences",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Buccal Film",
+        "Drug Delivery",
+        "Review"
+      ]
+    },
+    {
+      "title": "Innovative Vesicular Drug Delivery System of Ibuprofen with Unsaturated Fatty Acids: Formulation and Evaluation",
+      "authors": "Rukari T.G., Gavali P.A., Patil V.J., Gaonkar S.S., Rathod K.S., Patil Y.M., Dhongade Y.R., Jagtap V.A.",
+      "journal": "Asian Journal of Pharmacy and Technology",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 2,
+      "tags": [
+        "Ibuprofen",
+        "Vesicular Delivery",
+        "Fatty Acids"
+      ]
+    },
+    {
+      "title": "Beyond Conventional: Itraconazole Niosomal Gel as a Novel Approach for Candida albicans Management",
+      "authors": "Khan R.*, Rukari T., Jagtap V.",
+      "journal": "International Journal of Pharmaceutical Sciences",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Itraconazole",
+        "Niosomal Gel",
+        "Candida albicans"
+      ]
+    },
+    {
+      "title": "Optimizing Novasomes: Impact of Oleic Acid and Co-surfactant Ratio on Posaconazole Delivery—An In Vitro and Ex Vivo Pharmacokinetic Study",
+      "authors": "Rukari T., Pingale P.L., Upasani C.D.",
+      "journal": "Journal of Applied Pharmaceutical Research",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 4,
+      "tags": [
+        "Novasomes",
+        "Oleic Acid",
+        "Posaconazole",
+        "Pharmacokinetics"
+      ]
+    },
+    {
+      "title": "Solubility Reinforcement Using Binary Solvent Mixtures and Its Application in the Development and Validation of a UV-Spectrophotometric Method for Posaconazole",
+      "authors": "Rukari T.G., Pingale P.L., Upasani C.D.",
+      "journal": "Research Journal of Pharmacy and Technology",
+      "year": "2024",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 1,
+      "tags": [
+        "Solubility",
+        "UV-Spectrophotometric",
+        "Posaconazole",
+        "Scopus-indexed"
+      ]
+    },
+    {
+      "title": "Vesicular Drug Delivery Systems for the Treatment of Fungal Infections Through Topical Application: A Systematic Review",
+      "authors": "Rukari T.*, Pingale P., Upasani C.",
+      "journal": "Journal of Current Science and Technology",
+      "year": "2023",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 10,
+      "tags": [
+        "Vesicular Delivery",
+        "Fungal Infections",
+        "Systematic Review",
+        "Scopus-indexed"
+      ]
+    },
+    {
+      "title": "In Vitro Antimicrobial Activity of a Polyherbal Handwash Formulation",
+      "authors": "Rukari T.*, Pawar N., Gawas S., Bhoite J., Jadhav P., Madkholkar S., Jagtap V.",
+      "journal": "Asian Journal of Pharmacy and Technology",
+      "year": "2022",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 7,
+      "tags": [
+        "Antimicrobial",
+        "Polyherbal",
+        "Handwash"
+      ]
+    },
+    {
+      "title": "Preparation, Evaluation and Comparison of Herbal Toothpaste with a Marketed Herbal Toothpaste",
+      "authors": "Gautam D.*, Palkar P., Maule K., Singh S., Sawant G., Kuvalekar C., Rukari T., Jagtap V.A.",
+      "journal": "Asian Journal of Pharmacy and Technology",
+      "year": "2020",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 19,
+      "tags": [
+        "Herbal Toothpaste",
+        "Formulation",
+        "Evaluation"
+      ]
+    },
+    {
+      "title": "Emulgel: A Modern Tool for Topical Drug Delivery",
+      "authors": "Redkar M.R.*, Patil S.V., Rukari T.G.",
+      "journal": "World Journal of Pharmaceutical Research",
+      "year": "2019",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 19,
+      "tags": [
+        "Emulgel",
+        "Topical Delivery",
+        "Drug Delivery",
+        "Google Scholar"
+      ]
+    },
+    {
+      "title": "Formulation and Evaluation of Toothpaste Containing a Combination of Aloe and Sodium Chloride",
+      "authors": "Phalke P.L.*, Rukari T.G., Jadhav A.S.",
+      "journal": "International Journal of Pharmaceutical Sciences and Research",
+      "year": "2019",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 11,
+      "tags": [
+        "Toothpaste",
+        "Aloe",
+        "Sodium Chloride",
+        "Google Scholar"
+      ]
+    },
+    {
+      "title": "A Review on Ophthalmic In Situ Gels",
+      "authors": "Rukari T.G.*, Jadhav A.S., Londhe R.A., Phalke P.L.",
+      "journal": "American Journal of PharmTech Research",
+      "year": "2019",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 8,
+      "tags": [
+        "Ophthalmic",
+        "In Situ Gels",
+        "Review",
+        "Google Scholar"
+      ]
+    },
+    {
+      "title": "An Overview of Analytical Methods for the Estimation of Azole Antifungal Agents",
+      "authors": "Phalke P.L.*, Jadhav S.L., Rukari T.G.",
+      "journal": "International Journal of Advanced Biotechnology and Research",
+      "year": "2018",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Analytical Methods",
+        "Azole Antifungal",
+        "Overview"
+      ]
+    },
+    {
+      "title": "Transmission Electron Microscopy: An Overview",
+      "authors": "Rukari T.G.*, Alhat B.R.",
+      "journal": "International Research Journal for Inventions in Pharmaceutical Sciences",
+      "year": "2013",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Transmission Electron Microscopy",
+        "TEM",
+        "Overview"
+      ]
+    },
+    {
+      "title": "Niosomal Drug Delivery System: Promising Drug Carriers",
+      "authors": "Alhat B.*, Rukari T.",
+      "journal": "International Research Journal for Inventions in Pharmaceutical Sciences",
+      "year": "2013",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 6,
+      "tags": [
+        "Niosomal",
+        "Drug Carrier",
+        "Review"
+      ]
+    },
+    {
+      "title": "Pharmacovigilance: An Indian Scenario",
+      "authors": "Rukari T.G.*, Gavali D.K.",
+      "journal": "Inventi Rapid: Pharmacy Practice",
+      "year": "2013",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 0,
+      "tags": [
+        "Pharmacovigilance",
+        "India",
+        "Pharmacy Practice"
+      ]
+    },
+    {
+      "title": "Formulation and Evaluation of Esomeprazole Delayed-Release Tablets",
+      "authors": "Rukari T.G.*, Ahire G.V.",
+      "journal": "Asian Journal of Pharmaceutical and Clinical Research",
+      "year": "2013",
+      "category": "International Journal",
+      "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
+      "citations": 10,
+      "tags": [
+        "Esomeprazole",
+        "Delayed-Release",
+        "Tablets",
+        "Scopus-indexed",
+        "Google Scholar"
+      ]
+    }
+  ],
+  "patents": [
+    {
+      "title": "Refitting Clasp for Franz Diffusion Cell",
+      "status": "Granted",
+      "registrationNo": "IN-384486-001",
+      "date": "2023-04-21",
+      "inventors": "Rohan Krishna Barse, Jatin Arun Tekawade, Tushar Ganpat Rukari, Vishal Gokul Beldar, Vijay Arjun Jagtap, Hemraj Ramdas Kumavat",
+      "description": "Refitting Clasp for Franz Diffusion Cell.",
+      "type": "Design Patent"
+    },
+    {
+      "title": "Natural Mucilage Based Ocular Microspheres of Ketorolac Tromethamine",
+      "status": "Published",
+      "registrationNo": "IN-202321026398 A",
+      "date": "2023-05-12",
+      "inventors": "Dr. Vipul Ajit Sansare, Dr. Vijay Arjun Jagtap, Mr. Tushar Ganpat Rukari, et al.",
+      "description": "Fabrication of ketorolac tromethamine loaded Tamarindus indica seed and Basella alba seed mucilage-based alginate microspheres for ocular drug delivery.",
+      "type": "Ocular Drug Delivery"
+    },
+    {
+      "title": "Polyherbal Formulation for the Treatment of GIT Disorders",
+      "status": "Filed",
+      "registrationNo": "IN-CBR-15256",
+      "date": "2022-06-14",
+      "inventors": "Ms. Afiya Baig, Rohan Barse, Vijay Jagtap, Tushar Ganpat Rukari",
+      "description": "Polyherbal formulation for the treatment of GIT disorders.",
+      "type": "Gastroretentive"
+    },
+    {
+      "title": "Novel Nanosuspension Composition of Poorly Water-Soluble Cardiovascular Drug and Process of Preparation",
+      "status": "Published",
+      "registrationNo": "IN-202141042111",
+      "date": "2021-09-30",
+      "inventors": "Dr. Tushar Ganpat Rukari, V. S. Mane",
+      "description": "An advanced formulation utilizing steric stabilizers in a high-pressure homogenization process to create stable sub-200nm crystalline drug particles, boosting dissolution rate and therapeutic profile of Atorvastatin.",
+      "type": "Nanotechnology"
+    }
+  ],
+  "books": [
+    {
+      "title": "Basics of Python Programming for Pharmaceutical Sciences",
+      "role": "Lead Author",
+      "publisher": "Pee Vee Books (S. Vikas and Company)",
+      "year": "2026",
+      "isbn": "978-1-5433-4948-1",
+      "coverImage": "./books/04.jpeg",
+      "description": "Exclusively designed as per NEP 2020 and B.Pharmacy Semester-I syllabus prescribed by Pharmacy Council of India (PCI), New Delhi. Introduces fundamental Python programming concepts, data structures, scientific plotting (matplotlib), and numerical computing (numpy) with real-world pharmaceutical and formulation modeling applications.",
+      "coAuthors": [
+        "Dr. Tushar G. Rukari",
+        "Dr. Pallavi L. Phalke"
+      ]
+    },
+    {
+      "title": "Essentials of Biochemistry and Clinical Pathology",
+      "role": "Co-Author",
+      "publisher": "Pee Vee Books (S. Vikas and Company)",
+      "year": "2023",
+      "isbn": "978-1-5433-4657-2",
+      "coverImage": "./books/01.svg",
+      "description": "Academic textbook strictly framed under the Education Regulation 2020 (ER 2020) syllabus prescribed for D. Pharmacy, Second Year by the Pharmacy Council of India (PCI). Covers foundational biomolecules, metabolic cycles, clinical pathology diagnostic principles, and biochemical evaluation techniques.",
+      "coAuthors": [
+        "Pallavi L. Phalke",
+        "Tushar G. Rukari",
+        "Dr. Dipti H. Patel",
+        "Avinash B. Thalkari",
+        "Dr. Vijay A. Jagtap"
+      ]
+    },
+    {
+      "title": "Biopharmaceutics & Pharmacokinetics",
+      "role": "Co-Author",
+      "publisher": "Technical Publications",
+      "year": "2022",
+      "isbn": "978-81-9479-932-0",
+      "coverImage": "./books/02.svg",
+      "description": "Comprehensive textbook designed in strict accordance with the PCI Syllabus for B-Pharmacy (First Edition, May 2022). Covers drug absorption mechanisms, biological barriers, ADME processes, compartment modeling, non-linear pharmacokinetics, and clinical bioequivalence.",
+      "coAuthors": [
+        "Vipul A. Sansare",
+        "Tushar G. Rukari",
+        "Prashant P. Mane"
+      ]
+    },
+    {
+      "title": "Esomeprazole Magnesium Delayed-Release Tablets",
+      "role": "Author",
+      "publisher": "LAP LAMBERT Academic Publishing",
+      "year": "2013",
+      "isbn": "978-3-659-35689-6",
+      "coverImage": "./books/03.svg",
+      "description": "Academic research monograph on the formulation, enteric polymer coating, and in-vitro dissolution kinetics of delayed-release esomeprazole magnesium tablets to prevent gastric acid degradation and maximize targeted bioavailability.",
+      "coAuthors": [
+        "Tushar Rukari"
+      ]
+    }
+  ],
+  "researchGuidance": [
+    {
+      "level": "Undergraduate (B.Pharm)",
+      "count": 21,
+      "description": "Led 21 comprehensive undergraduate research groups in product development and novel delivery systems.",
+      "highlights": "Successfully translated student capstone projects into 2 published patents and 4 scientific publications in indexed national journals."
+    },
+    {
+      "level": "Academic Research Mentorship",
+      "count": 15,
+      "description": "Mentored junior faculty and research trainees in formulation and development, writing grant proposals, and scientific manuscript draft reviews.",
+      "highlights": "Assisted PG researchers in securing their degree and publishing high-impact peer-reviewed papers."
+    }
+  ],
+  "grants": [
+    {
+      "title": "Awaiting Sanction",
+      "fundingAgency": "University of Mumbai",
+      "amount": "₹0,00,000",
+      "year": "2026",
+      "status": "Ongoing",
+      "description": "Principal Investigator for a university-funded research project focusing on novel formulation development and drug delivery optimization."
+    },
+    {
+      "title": "Pharma Anveshan 2026",
+      "fundingAgency": "Pharmacy Council of India (PCI), New Delhi",
+      "amount": "₹5,00,000",
+      "year": "2026",
+      "status": "Completed",
+      "description": "Principal coordinator for a ₹5,00,000 grant from the Pharmacy Council of India (New Delhi) to organize Pharma Anveshan 2026, a regional research initiative for the Sindhudurg and Goa region, in collaboration with the National Pharmacy Welfare body (2026)."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Teacher Award for Academic Excellence",
+      "agency": "Yashwantrao Bhonsale Education Society",
+      "year": "2023",
+      "description": "Recognized for exemplary teaching methods, implementation of digital-twin laboratory sessions, and excellent feedback score (98%) over three consecutive academic terms."
+    },
+    {
+      "title": "Research Excellence Award (Pharmacy Category)",
+      "agency": "Society of Pharmaceutical Education & Research (SPER)",
+      "year": "2021",
+      "description": "Awarded at the Annual International Conference for outstanding scientific contribution to novel ocular vesicle research and granted patents in the pharmaceutics category."
+    },
+    {
+      "title": "Excellent Scientific Poster Presentation (First Prize)",
+      "agency": "Indian Pharmaceutical Congress (IPC)",
+      "year": "2019",
+      "description": "Presented research on 'Proniosomal topical systems of Ketoprofen' amongst 500+ competing young scientific presenters."
+    }
+  ],
+  "conferences": [
+    {
+      "title": "Resource Person on 'Intellectual Property Rights and Patenting in Pharmaceutical Formulations'",
+      "role": "Expert Speaker",
+      "organizer": "Sanjeevani College of Pharmaceutical Education",
+      "year": "2024",
+      "location": "Kopargaon, MH, India"
+    },
+    {
+      "title": "National Seminar on Recent Advancements in Nanotechnology-Based NDDS",
+      "role": "Organizing Chair & Head",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "year": "2023",
+      "location": "Sawantwadi, India"
+    },
+    {
+      "title": "AICTE-Sponsored QIP Program on 'Quality by Design (QbD) in Formulations'",
+      "role": "Participant Scholar",
+      "organizer": "Poona College of Pharmacy",
+      "year": "2021",
+      "location": "Pune, India"
+    },
+    {
+      "title": "International Symposium on Vesicular drug Delivery Carriers (ISVDC)",
+      "role": "Scientific Speaker",
+      "organizer": "Mumbai University, Department of Pharmaceutical Sciences",
+      "year": "2018",
+      "location": "Mumbai, India"
+    }
+  ],
+  "responsibilities": [
+    {
+      "title": "Head, Department of Pharmaceutics",
+      "organization": "Yashwantrao Bhonsale College of Pharmacy",
+      "duration": "2020 - Present",
+      "description": "Leading formulation sciences labs, coordinating academic timetables, evaluating faculty performance, and mentoring post-graduate laboratory instructors."
+    },
+    {
+      "title": "Coordinator, NBA & NAAC Accreditation Committees",
+      "organization": "YBCP Quality Assurance",
+      "duration": "2020 - Present",
+      "description": "Prepared documentation for SAR, AQAR and Criterion 6, contributing to high accreditation tier rankings."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Core Pharmaceutics",
+      "items": [
+        "Vesicular Carriers (Liposomes, Niosomes, Ethosomes)",
+        "Thermosensitive Ocular In-Situ Hydrogels",
+        "Polyherbal Gel Formulation & Evaluation",
+        "Sustained-Release Dermal & Oral Systems",
+        "Nanosuspensions & Solid Dispersion Systems"
+      ]
+    },
+    {
+      "category": "Analytical & Characterization Instruments",
+      "items": [
+        "Brookfield Cone Viscometer",
+        "Zeta Sizer (Particle Size & Zeta Potential)",
+        "HPLC (High-Performance Liquid Chromatography)",
+        "FTIR Spectrophotometer",
+        "USP Dissolution Apparatus (Type I, II)"
+      ]
+    },
+    {
+      "category": "Academic & Research Software",
+      "items": [
+        "Design-Expert® (Response Surface & Factorial Designs)",
+        "Minitab® (Statistical Quality Control & Analysis)",
+        "Zotero & Mendeley Reference Managers",
+        "ChemDraw (Chemical Structure & Pathway Drafting)",
+        "Turnitin & Urkund Plagiarism Prevention Tools"
+      ]
+    },
+    {
+      "category": "Academic Administration",
+      "items": [
+        "IPR Search & Patent Specification Drafting",
+        "NAAC/NBA Criterion Documentation & Audits",
+        "Digital-Twin Pedagogy & E-Learning Designs",
+        "Syllabus & Lab Practical Manual Writing"
+      ]
+    }
+  ],
+  "engagements": [
+    {
+      "title": "2nd PharMAIR International Conference on 'Pharm360: Emerging Trends and Future Perspectives in Pharmaceuticals'",
+      "role": "Delegate Presentation",
+      "organizer": "Shri D.D. Vispute College of Pharmacy & Research Center, Panvel, hosted by Operant Pharmacy Federation",
+      "date": "22–23 March 2024",
+      "location": "Panvel, India",
+      "category": "representation"
+    },
+    {
+      "title": "2nd International Conference on 'Pharmaceutical Research: Fundamentals & Advanced Trends'",
+      "role": "Conference Attendance",
+      "organizer": "SWVSM's Tatyasaheb Kore College of Pharmacy",
+      "date": "14 March 2024",
+      "location": "Warananagar, India",
+      "category": "representation"
+    },
+    {
+      "title": "Two Days International Workshop on 'Recent Advances and Developments in Transdisciplinary Research'",
+      "role": "Presentation",
+      "organizer": "Sri Venkateswara University, Tirupati, and Seven Hills College of Pharmacy, Tirupati",
+      "date": "26–27 July 2023",
+      "location": "Tirupati, India",
+      "category": "representation"
+    },
+    {
+      "title": "Two Days International Conference on 'Recent Innovations: A Holistic and Integrated Approach to Pharmaceutical Science'",
+      "role": "Oral Presentation",
+      "organizer": "GES's Sir Dr. M.S. Gosavi College of Pharmaceutical Education and Research",
+      "date": "23–24 September 2022",
+      "location": "Nashik, India",
+      "category": "representation"
+    },
+    {
+      "title": "National Level Conference on 'Drug Regulations in India'",
+      "role": "Participation",
+      "organizer": "Association of Pharmacy Professionals and Learners, India",
+      "date": "15 September 2013",
+      "location": "Poona Hospital and Research Center, Pune, India",
+      "category": "representation"
+    },
+    {
+      "title": "Three Days National Conference on 'Development, Regulatory & Intellectual Aspects of Drug Delivery Systems'",
+      "role": "Participation",
+      "organizer": "University of Pune & Amrutvahini College of Pharmacy",
+      "date": "16–18 February 2012",
+      "location": "Sangamner, India",
+      "category": "representation"
+    },
+    {
+      "title": "Hands-on Training on High End Research Equipment",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "MSFDA Pune and KBCNMU Jalgaon",
+      "date": "3 Aug 2026 to 8 Aug 2026",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Workshop on 21st Avishkar Research Convection 2026-27",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "UoM, Mumbai and YBCP Sawantwadi",
+      "date": "1 Aug 2026 to 2 Aug 2026",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "AI Tools Mastery Workshop",
+      "role": "Workshop Participation",
+      "organizer": "AI Tools Academy",
+      "date": "6 May 2026",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "3-Days Bootcamp on 'How to Get Content Writing and Content Marketing Jobs in the Age of AI'",
+      "role": "Bootcamp Participation",
+      "organizer": "Content Academy",
+      "date": "18–20 April 2026",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Five Day Online FDP on 'AI Powered Pharmacovigilance and Adverse Drug Reactions'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "Sree Venkateswara College of Pharmacy",
+      "date": "8–12 September 2025",
+      "location": "Nellore, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Two Days Online e-FDP on 'Pedagogical Tools and Approaches: Engaging Pharmacy Students in Chemistry Classroom'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "School of Pharmacy, D.Y. Patil Deemed to be University, in association with APTI Maharashtra Branch",
+      "date": "14–15 February 2025",
+      "location": "Navi Mumbai, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One Week National Level FDP on 'OBE, AI and Research Skills: A Transformative Approach to Higher Education'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "27–31 January 2025",
+      "location": "Sawantwadi, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "International Webinar on 'Bridging Research and Publication: A Guide to Publish in the SCIE Q1 Journal'",
+      "role": "International Webinar",
+      "organizer": "Sri Adichunchanagiri's College of Pharmacy, Adichunchanagiri University",
+      "date": "18–19 January 2025",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "National Webinar on 'Bioactive Compounds from Natural Sources: Identification and Applications'",
+      "role": "National Webinar",
+      "organizer": "Sri Adichunchanagiri College of Pharmacy, Adichunchanagiri University",
+      "date": "11 January 2025",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "03 Days Research Upskilling & Capacity Building Mentorship Program for Pharmacy Faculty",
+      "role": "Workshop Participation",
+      "organizer": "SVKM's Dr. Bhanuben Nanavati College of Pharmacy",
+      "date": "5–7 December 2024",
+      "location": "Vile Parle, Mumbai, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Live 3-Hour Workshop on 'ChatGPT & AI Hacks with MS Office'",
+      "role": "Workshop Participation",
+      "organizer": "Office Productivity Hub",
+      "date": "16 March 2024",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One Week International Programme on 'Recent Advancements in Pharmaceuticals: Academic, Research, Ethics and Social Perspective'",
+      "role": "International e-FDP/e-STP",
+      "organizer": "APTI-Central",
+      "date": "11–16 March 2024",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Short-Term Training Programme (STTP) on 'Advanced Teaching Methods'",
+      "role": "Short-Term Training Programme (STTP)",
+      "organizer": "NITTTR Bhopal",
+      "date": "19–23 February 2024",
+      "location": "Bhopal, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One Day National Level Online Seminar on 'Quality Sustenance and Quality Improvement: Issues and Challenges'",
+      "role": "National Seminar",
+      "organizer": "AISSMS College of Pharmacy",
+      "date": "20 September 2022",
+      "location": "Pune, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Professional Advancement Programme on 'Intellectual Property Rights (IPR): A Macroscopic Understanding of Patent(ing) and Beyond'",
+      "role": "Professional Advancement Programme",
+      "organizer": "Goa College of Pharmacy",
+      "date": "25–29 July 2022",
+      "location": "Goa, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Webinar on 'National Education Policy'",
+      "role": "Webinar",
+      "organizer": "NITTTR Bhopal",
+      "date": "6 June 2022",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Two Days Workshop on 'Code of Conduct: Setting the Tone for Your Work'",
+      "role": "Workshop Participation",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "27–28 May 2022",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One Week FDP on 'Outcome Based Education (OBE): Design, Delivery and Evaluation Practices'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "IQAC, Yashwantrao Bhonsale College of Pharmacy",
+      "date": "17–21 May 2022",
+      "location": "Sawantwadi, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Two Week AICTE-sponsored FDP Phase-I on 'Importance of Innovation and Research Culture to Inculcate Startup and Entrepreneurship'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "Konkan Gyanpeeth Rahul Dharkar College of Pharmacy & Research Institute",
+      "date": "15–26 March 2021",
+      "location": "Karjat, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Online FDP on 'Drug Engineering'",
+      "role": "ATAL Academy Faculty Development Programme (FDP)",
+      "organizer": "Bombay College of Pharmacy under the AICTE ATAL Academy",
+      "date": "21–25 September 2020",
+      "location": "Mumbai, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Five Days e-FDP on 'Building Research and Innovative Culture Among Pharmacy Teachers'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "D.Y. Patil Institute of Pharmaceutical Science and Research, Pimpri, in association with APTI",
+      "date": "18–22 May 2020",
+      "location": "Pune, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One Week Online FDP on 'Innovative Techniques in Pharmaceutical Sciences'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "P. Wadhwani College of Pharmacy, Yavatmal, in association with the IPA Amravati Branch",
+      "date": "5–9 May 2020",
+      "location": "Yavatmal, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Four Week Online FDP on 'Tools for Online Teaching Learning Process'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "Government Polytechnic, Jalgaon, approved by MSBTE",
+      "date": "20 April – 17 May 2020",
+      "location": "Jalgaon, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One Week Online FDP on 'Effective Use of ICT Tools for Teaching and Learning Process and Online Assessment'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "M.C.E. Society's Institute of Pharmacy (Diploma), sponsored by MSBTE",
+      "date": "20–25 April 2020",
+      "location": "Pune, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "10 Days FDP on 'Marketing Management'",
+      "role": "Faculty Development Programme (FDP)",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy and ICT Mumbai under PMMMNMTT Scheme",
+      "date": "18–27 September 2019",
+      "location": "Sawantwadi, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Two Weeks Induction Phase-I Programme",
+      "role": "Induction Programme",
+      "organizer": "NITTTR Bhopal, Ministry of Human Resource Development (MHRD), Government of India",
+      "date": "1–12 June 2015",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "NEP 2020 Orientation & Sensitization Programme under Malaviya Mission Teacher Training Programme (MM-TTP)",
+      "role": "Orientation & Sensitization Programme",
+      "organizer": "UGC through the University of Mumbai",
+      "date": "17–28 February 2025",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Online One-Week STTP on 'Advances in Pharmaceutical Research: A Journey from Academics to Industry'",
+      "role": "Short-Term Training Programme (STTP)",
+      "organizer": "AICTE & Government College of Pharmacy",
+      "date": "14–19 June 2021",
+      "location": "Aurangabad, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "One-Week Online STTP on 'Role of Regulatory Affairs in Pharmaceutical Industry: Current Trends and Future Perspectives'",
+      "role": "Short-Term Training Programme (STTP)",
+      "organizer": "AICTE & R.C. Patel Institute of Pharmaceutical Education and Research",
+      "date": "22–27 May 2021",
+      "location": "Shirpur, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Phase-III AICTE-sponsored STTP on 'Approaches of Teaching and Self-Efficacy Beliefs'",
+      "role": "Short-Term Training Programme (STTP)",
+      "organizer": "Columbia Institute of Pharmacy",
+      "date": "26 April – 1 May 2021",
+      "location": "Raipur, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Short Term Course in Intellectual Property Rights",
+      "role": "Short-Term Course",
+      "organizer": "UGC-HRDC, University of Mumbai, under the RUSA Scheme",
+      "date": "11–16 January 2021",
+      "location": "Mumbai, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "Personality Development Programme",
+      "role": "Personality Development Programme",
+      "organizer": "Jivan Sanjivani Manav Sanshodhan Vikas Sanstha",
+      "date": "6 October 2012",
+      "location": "Satara, India",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "'FEEL-EMPLOYABLE' Semester Course",
+      "role": "Semester Certificate Course",
+      "organizer": "CLHRD, Mangalore",
+      "date": "3–8 August 2006",
+      "category": "workshop_fdp"
+    },
+    {
+      "title": "General Course on Intellectual Property",
+      "role": "Distance Learning Course",
+      "organizer": "World Intellectual Property Organization (WIPO)",
+      "date": "1 October – 17 November 2022",
+      "category": "certificate"
+    },
+    {
+      "title": "AICTE-approved NPTEL Online Certification Course on 'Development of Research'",
+      "role": "NPTEL Online Certification",
+      "organizer": "SWAYAM ARPIT Platform",
+      "date": "Sep–Nov 2020",
+      "category": "certificate"
+    },
+    {
+      "title": "AICTE-approved NPTEL Online Certification Course on 'Introduction to Research'",
+      "role": "NPTEL Online Certification",
+      "organizer": "SWAYAM ARPIT Platform",
+      "date": "Sep–Nov 2020",
+      "category": "certificate"
+    },
+    {
+      "title": "Educator Development Program on 'Preparing Tomorrow's Teachers'",
+      "role": "Educator Development Program",
+      "organizer": "Pharmacy Council of India (PCI), APTI, and KLE Academy of Higher Education and Research",
+      "date": "6 June 2020",
+      "category": "certificate"
+    },
+    {
+      "title": "Online short-term course on 'Online Teaching Using Google Classroom and Google Forms'",
+      "role": "Short-Term Course",
+      "organizer": "Adarsh College of Pharmacy",
+      "date": "28 April 2020",
+      "location": "Vita, India",
+      "category": "certificate"
+    },
+    {
+      "title": "Online Course on 'Coronavirus Disease 2019'",
+      "role": "Online Certification Course",
+      "organizer": "AACC Learning Lab for Laboratory Medicine through NEJM Knowledge+, Harvard Medical School",
+      "date": "26 March 2020",
+      "category": "certificate"
+    },
+    {
+      "title": "AICTE-approved Online Refresher Course in Pharmacy for Higher Education",
+      "role": "ARPIT Online Refresher Course",
+      "organizer": "IIT (BHU), Varanasi, through the SWAYAM ARPIT Platform",
+      "date": "16 February 2020",
+      "category": "certificate"
+    },
+    {
+      "title": "Career Skills online course",
+      "role": "Career Skills Certification",
+      "organizer": "TCS (Tata Consultancy Services)",
+      "date": "5 August 2019 – 4 April 2020",
+      "category": "certificate"
+    },
+    {
+      "title": "Felicitation at National Level for successful organization of Pharma Anveshan 2026 (Maharashtra and Goa)",
+      "role": "Felicitation",
+      "organizer": "Pharmacy Council of India (PCI), New Delhi and L. M. College of Pharmacy, Ahmedabad",
+      "date": "11 July 2026",
+      "category": "felicitation"
+    },
+    {
+      "title": "Felicitation for outstanding contributions to the teaching profession with a shawl, memento, and appreciation certificate",
+      "role": "Felicitation",
+      "organizer": "Maharashtra Bhushan Samajprobodhankar Nivrutti Maharaj Deshmukh Indurikar",
+      "date": "6 October 2025",
+      "category": "felicitation"
+    },
+    {
+      "title": "Appreciation for individual contributions leading to achieving NAAC Accreditation (1st Cycle) within a record six-year period",
+      "role": "Appreciation",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy Management",
+      "date": "13 April 2022",
+      "category": "felicitation"
+    },
+    {
+      "title": "Honor for outstanding contributions to the teaching profession",
+      "role": "Honor",
+      "organizer": "Hon. Shri Sharad Dada Sonawane (MLA, MNS)",
+      "date": "5 September 2016",
+      "category": "felicitation"
+    },
+    {
+      "title": "Honor for outstanding contributions to the teaching profession",
+      "role": "Honor",
+      "organizer": "Hon. Shri Sharad Dada Sonawane (MLA, MNS)",
+      "date": "5 September 2015",
+      "category": "felicitation"
+    },
+    {
+      "title": "Appreciation Trophy for the successful coordination of Pharma Anveshan 2026",
+      "role": "Appreciation Trophy",
+      "organizer": "Pharmacy Council of India (PCI), New Delhi",
+      "date": "16 March 2026",
+      "category": "felicitation"
+    },
+    {
+      "title": "Guest of Honor Memento at the One Day National Conference on 'Vocational Education and National Education Policy–2020'",
+      "role": "Guest of Honor Recognition",
+      "organizer": "Padmashri Dr. G.G. Jadhav Mahavidyalaya, Anandi Pharmacy College, and SUCOMATA",
+      "date": "6 April 2022",
+      "location": "Kalmbe, India",
+      "category": "felicitation"
+    },
+    {
+      "title": "Record of Achievement for completing 'COVID-19: Operational Planning Guidelines and COVID-19 Partners Platform to Support Country Preparedness and Response'",
+      "role": "Record of Achievement",
+      "organizer": "World Health Organization (WHO) / Partners Platform",
+      "date": "28 March 2020",
+      "category": "felicitation"
+    },
+    {
+      "title": "Memento of Appreciation for active participation in the 10 Days FDP on 'Marketing Management'",
+      "role": "Award",
+      "organizer": "PMMMNMTT Scheme, Government of India, MHRD",
+      "date": "2019",
+      "category": "felicitation"
+    },
+    {
+      "title": "Honored for guiding students in Social Corporate Responsibility (SCR) initiatives",
+      "role": "Award",
+      "organizer": "Residential Deputy Collector",
+      "date": "15 August 2018",
+      "category": "felicitation"
+    },
+    {
+      "title": "External Paper Setter and Answer-Script Evaluator across 18 examination cycles (B.Pharm Semesters I–VIII in Pharmaceutics, Biopharmaceutics, Industrial Pharmacy, NDDS, and Pharmacy Practice)",
+      "role": "External Examiner & Evaluator",
+      "organizer": "D.Y. Patil University, Pune (2022–2025) and Goa University (2023–2025)",
+      "date": "2022 – 2025",
+      "category": "governance"
+    },
+    {
+      "title": "Answer-Script Evaluator and Moderator for Pharmacy courses",
+      "role": "Evaluator & Moderator",
+      "organizer": "University of Mumbai and Maharashtra State Board of Technical Education (MSBTE)",
+      "date": "2020 – present",
+      "category": "governance"
+    },
+    {
+      "title": "Controller of Examinations administering board exams across multiple Polytechnic and Pharmacy institutes",
+      "role": "Controller of Examinations",
+      "organizer": "Maharashtra State Board of Technical Education (MSBTE)",
+      "date": "2009-2017",
+      "category": "governance"
+    },
+    {
+      "title": "Manuscript reviewer for Scopus- and Web of Science-indexed journals (Research Journal of Pharmacy and Technology, Journal of Applied Pharmaceutical Research, etc.)",
+      "role": "Peer Reviewer",
+      "organizer": "Scopus & Web of Science Indexed Journals",
+      "date": "6 Manuscripts Reviewed",
+      "category": "governance"
+    },
+    {
+      "title": "Delivered a session for Smart Pharmacist Course 2.0+, a statewide Continuing Professional Development (CPD) initiative across 36 districts of Maharashtra",
+      "role": "Resource Person",
+      "organizer": "Drug Information Center, Maharashtra State Pharmacy Council",
+      "date": "18 January 2026",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Delivered a session for the DIC MSPC Refresher Course",
+      "role": "Resource Person",
+      "organizer": "Maharashtra State Pharmacy Council in association with Sindhudurg Chemist and Druggist Association",
+      "date": "12 May 2024",
+      "category": "expert_talk"
+    },
+    {
+      "title": "One Week National Level Faculty Development Programme on 'Quality NAAC Practices: A Step Towards NEP Excellence'",
+      "role": "Resource Person",
+      "organizer": "National Faculty Development Council",
+      "date": "4–9 December 2023",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Invited as Chief Guest for the Farewell Ceremony of Batch 2018–2020",
+      "role": "Chief Guest",
+      "organizer": "Yashwantrao Bhonsale College of D. Pharmacy",
+      "date": "7 November 2020",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Delivered an expert lecture at the National Level UGC-sponsored Seminar on 'Emerging Trends in Pharmaceutical Chemistry (ETPC-2020)' under UGC-NSQF Scheme",
+      "role": "Resource Person",
+      "organizer": "Shri Pancham Khemraj (SPK) College, Sawantwadi",
+      "date": "22 January 2020",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Invited as a Guest at Career Fair 2019 to guide students on career opportunities",
+      "role": "Guest Guide",
+      "organizer": "Yashwantrao Bhonsale Polytechnic, Sawantwadi",
+      "date": "6 June 2019",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Invited as Chief Guest at Career Fair 2018",
+      "role": "Chief Guest",
+      "organizer": "Yashwantrao Bhonsale Polytechnic, Sawantwadi",
+      "date": "22 December 2018",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Invited as Chief Guest at Career Fair 2018 with guidance provided to students on Pharmacy careers",
+      "role": "Chief Guest",
+      "organizer": "Government Polytechnic, Malvan",
+      "date": "12 June 2018",
+      "category": "expert_talk"
+    },
+    {
+      "title": "Served as a Jury Member for the 8th National Symposium on 'Advanced Technology in Drug Discovery and Development'",
+      "role": "Jury Member",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy in association with IPA Maharashtra State Branch",
+      "date": "21 February 2026",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Served as a Jury Member for the MSBTE-sponsored State Level Technical Quiz Competition 2025–26",
+      "role": "Jury Member",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "16 January 2026",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Officiated as Referee for the Tug of War Competition during Sports Fiesta–2026",
+      "role": "Referee",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "8–10 January 2026",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Evaluated the Vaccination Tree Competition during National Pharmacy Week 2025",
+      "role": "Evaluator",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "19 November 2025",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Served as an Evaluator for 'Pharmanecia 4.E – International Research Conference on Recent Advances in AI and Machine Learning Driven Drug Discovery'",
+      "role": "Evaluator",
+      "organizer": "JSS College of Pharmacy, Ooty",
+      "date": "7–8 March 2025",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Served as a Jury Member for the Pharma Carton Making Competition during World Pharmacist Day 2024",
+      "role": "Jury Member",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy and College of D. Pharmacy",
+      "date": "25 September 2024",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Served as a Jury Member for the 6th One Day National Symposium on 'Current Perspective & Prospective of Pharmaceutical Science (C3PS)'",
+      "role": "Jury Member",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy in association with IPA Maharashtra State Branch",
+      "date": "10 February 2024",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Judged the Industrial Model Making Competition",
+      "role": "Judge",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "14 September 2023",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Served as a Jury Member for the State Level E-Poster Competition",
+      "role": "Jury Member",
+      "organizer": "Sitabai Thite College of Pharmacy (Poly.), Shirur",
+      "date": "12 January 2021",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Member of the Organizing Committee for the One Day National Symposium",
+      "role": "Organizing Committee Member",
+      "organizer": "IQAC & SAVANT Club, Yashwantrao Bhonsale College of Pharmacy, in association with IPA Maharashtra Branch",
+      "date": "2019 – Present (Annual)",
+      "category": "evaluator_judge"
+    },
+    {
+      "title": "Served on the Organizing Committee for the One Day National Symposium on 'Novel Trends in Drug Design and Natural Product Chemistry'",
+      "role": "Organizing Committee Member",
+      "organizer": "Yashwantrao Bhonsale College of Pharmacy",
+      "date": "2 February 2019",
+      "category": "evaluator_judge"
+    }
+  ]
+}
