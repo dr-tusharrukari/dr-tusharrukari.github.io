@@ -11,6 +11,8 @@ interface HeaderProps {
   onToggleTheme: () => void;
   activeSection: string;
   setActiveSection: (section: string) => void;
+  isMobileMenuOpen?: boolean;
+  setIsMobileMenuOpen?: (open: boolean) => void;
 }
 
 export default function Header({
@@ -21,8 +23,12 @@ export default function Header({
   onToggleTheme,
   activeSection,
   setActiveSection,
+  isMobileMenuOpen,
+  setIsMobileMenuOpen,
 }: HeaderProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalIsOpen, setInternalIsOpen] = useState(false);
+  const isOpen = isMobileMenuOpen !== undefined ? isMobileMenuOpen : internalIsOpen;
+  const setIsOpen = setIsMobileMenuOpen || setInternalIsOpen;
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -62,31 +68,34 @@ export default function Header({
           : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4 lg:gap-6 xl:gap-8 h-20">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-4 xl:gap-6 h-20">
           {/* Logo Brand */}
-          <div className="flex items-center gap-3 cursor-pointer shrink-0 mr-2 lg:mr-6 xl:mr-8" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div
+            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer shrink-0"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent shadow-lg shadow-brand-primary/10 shrink-0">
               <Sparkles className="w-5 h-5 text-white" />
               <div className="absolute -inset-0.5 bg-gradient-to-tr from-brand-primary to-brand-accent rounded-xl blur-sm opacity-30 -z-10 animate-pulse"></div>
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center shrink-0">
               <span className="font-display font-bold text-base sm:text-lg tracking-tight whitespace-nowrap bg-gradient-to-r dark:from-white dark:via-slate-200 dark:to-slate-400 from-slate-900 via-indigo-950 to-slate-900 bg-clip-text text-transparent">
                 {personal.name}
               </span>
-              <p className="text-[10px] font-mono tracking-widest text-brand-primary uppercase whitespace-nowrap">
+              <p className="text-[10px] font-mono tracking-wider text-brand-primary uppercase whitespace-nowrap">
                 Academic Dashboard
               </p>
             </div>
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
+          <nav className="hidden xl:flex items-center gap-1 xl:gap-1.5 shrink-0">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`gemini-nav-btn px-2.5 xl:px-3.5 py-1.5 rounded-xl text-xs xl:text-sm font-medium transition-all duration-200 relative cursor-pointer hover:scale-[1.03] active:scale-95 whitespace-nowrap ${
+                className={`gemini-nav-btn px-2.5 xl:px-3 py-1.5 rounded-xl text-xs xl:text-sm font-medium transition-all duration-200 relative cursor-pointer hover:scale-[1.03] active:scale-95 whitespace-nowrap ${
                   activeSection === item.id
                     ? 'active text-brand-primary font-semibold'
                     : 'text-slate-600 dark:text-slate-400'
@@ -104,12 +113,35 @@ export default function Header({
             ))}
           </nav>
 
+          {/* Medium screen compact nav (1024px - 1280px) */}
+          <nav className="hidden lg:flex xl:hidden items-center gap-0.5 shrink-0">
+            {navItems.slice(0, 5).map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`px-2 py-1 rounded-lg text-xs font-medium transition-all duration-200 whitespace-nowrap ${
+                  activeSection === item.id
+                    ? 'bg-brand-primary/10 text-brand-primary font-semibold'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+            <button
+              onClick={() => setIsOpen(true)}
+              className="px-2 py-1 rounded-lg text-xs font-medium text-brand-primary hover:bg-brand-primary/10 transition-colors"
+            >
+              More...
+            </button>
+          </nav>
+
           {/* Action buttons */}
           <div className="hidden sm:flex items-center gap-2 xl:gap-3 shrink-0">
             {/* Live Visitor Count Button */}
             <button
               onClick={onOpenVisitorModal}
-              className="gemini-btn !px-3 !py-1.5 !text-xs !rounded-lg font-mono text-slate-700 dark:text-slate-300 hover:!text-slate-900 dark:hover:!text-white hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer shadow-sm"
+              className="gemini-btn !px-3 !py-1.5 !text-xs !rounded-lg font-mono text-slate-700 dark:text-slate-300 hover:!text-slate-900 dark:hover:!text-white hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer shadow-sm whitespace-nowrap"
               title="Live Academic Visitor Analytics - Click for full stats"
             >
               <span className="relative flex h-2 w-2">
@@ -133,14 +165,14 @@ export default function Header({
           </div>
 
           {/* Mobile menu trigger */}
-          <div className="lg:hidden flex items-center gap-1.5">
+          <div className="lg:hidden flex items-center gap-1.5 shrink-0">
             {/* Live Visitor Mobile Badge */}
             <button
               onClick={onOpenVisitorModal}
-              className="px-2.5 py-1.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xs font-mono text-slate-700 dark:text-slate-300 flex items-center gap-1.5"
+              className="px-2 py-1.5 rounded-lg bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xs font-mono text-slate-700 dark:text-slate-300 flex items-center gap-1 sm:gap-1.5"
               title="Live Visitors"
             >
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
               <Eye className="w-3.5 h-3.5 text-brand-primary" />
               <span className="font-semibold text-xs">
                 {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,584'}
@@ -150,15 +182,17 @@ export default function Header({
             {/* Theme Toggle Button Mobile */}
             <button
               onClick={onToggleTheme}
-              className="p-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-white/10 rounded-xl transition-all duration-300"
+              className="p-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-white/10 rounded-lg transition-all duration-300 shrink-0"
               title="Toggle Theme"
             >
-              {theme === 'dark' ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-brand-primary" />}
+              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-brand-primary" />}
             </button>
 
+            {/* Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl bg-slate-100 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-gray-900 focus:outline-none transition-all duration-300"
+              className="p-2 rounded-lg bg-indigo-600/10 dark:bg-indigo-500/20 border border-indigo-500/30 text-indigo-600 dark:text-indigo-300 hover:bg-indigo-600/20 focus:outline-none transition-all duration-300 shrink-0"
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>

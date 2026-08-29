@@ -7,6 +7,7 @@ import ExperienceAndGrants from './components/ExperienceAndGrants';
 import SkillsAndServices from './components/SkillsAndServices';
 import Contact from './components/Contact';
 import Engagements from './components/Engagements';
+import MobileBottomNav from './components/MobileBottomNav';
 import { VisitorModal } from './components/VisitorModal';
 import ShimmerLoader from './components/ShimmerLoader';
 import portfolioData from './data/portfolioData.json';
@@ -25,6 +26,7 @@ export default function App() {
     return getCachedVisitorStats();
   });
   const [activeSection, setActiveSection] = useState<string>('about');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
     return (localStorage.getItem('theme') as 'dark' | 'light') || 'dark';
   });
@@ -147,9 +149,11 @@ export default function App() {
         onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         activeSection={activeSection}
         setActiveSection={setActiveSection}
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
       />
 
-      <main className="pt-24 pb-12 min-h-[75vh]">
+      <main className="pt-24 pb-24 lg:pb-12 min-h-[75vh]">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSection}
@@ -242,7 +246,7 @@ export default function App() {
               <Eye className="w-3.5 h-3.5 text-brand-primary" />
               <span className="text-slate-500 dark:text-slate-400">Live Visitors:</span>
               <span className="font-bold text-slate-900 dark:text-white">
-                {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,548'}
+                {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,584'}
               </span>
             </button>
 
@@ -263,6 +267,13 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Floating Mobile Bottom Navigation */}
+      <MobileBottomNav
+        activeSection={activeSection}
+        onSelectSection={(s) => setActiveSection(s)}
+        onOpenFullMenu={() => setIsMobileMenuOpen(true)}
+      />
 
       {/* MODALS */}
       <VisitorModal
