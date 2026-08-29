@@ -28,11 +28,19 @@ export default function App() {
   const [activeSection, setActiveSection] = useState<string>('about');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    return (localStorage.getItem('theme') as 'dark' | 'light') || 'dark';
+    // 1. Check if user manually saved an explicit theme preference
+    const savedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      return savedTheme;
+    }
+    // 2. Otherwise auto-detect device/browser system preference
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    return 'light';
   });
 
   useEffect(() => {
-    localStorage.setItem('theme', theme);
     const root = window.document.documentElement;
     if (theme === 'light') {
       root.classList.add('light-theme');
@@ -42,6 +50,29 @@ export default function App() {
       root.classList.add('dark');
     }
   }, [theme]);
+
+  // Listen for device / OS system display theme changes in real-time if no explicit user override is stored
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = (e: MediaQueryListEvent) => {
+      const hasUserOverride = localStorage.getItem('theme_user_selected');
+      if (!hasUserOverride) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleSystemThemeChange);
+    return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
+  }, []);
+
+  const handleToggleTheme = () => {
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    localStorage.setItem('theme', nextTheme);
+    localStorage.setItem('theme_user_selected', 'true');
+  };
 
   // Synchronize and record live visitor hit in real-time
   const recordVisitorHit = useCallback(async () => {
@@ -146,7 +177,7 @@ export default function App() {
         visitorStats={visitorStats}
         onOpenVisitorModal={() => setIsVisitorModalOpen(true)}
         theme={theme}
-        onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onToggleTheme={handleToggleTheme}
         activeSection={activeSection}
         setActiveSection={setActiveSection}
         isMobileMenuOpen={isMobileMenuOpen}
