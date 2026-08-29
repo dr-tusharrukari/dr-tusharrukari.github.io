@@ -64,8 +64,8 @@ export default function Header({
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'glass-panel border-b border-white/10 shadow-lg shadow-indigo-500/5'
-          : 'bg-transparent border-b border-transparent'
+          ? 'bg-white/95 dark:bg-[#040714]/95 backdrop-blur-2xl border-b border-slate-200/80 dark:border-white/10 shadow-lg shadow-slate-900/5 dark:shadow-black/40'
+          : 'bg-white/90 dark:bg-[#030712]/90 backdrop-blur-xl border-b border-slate-200/40 dark:border-white/5 shadow-sm shadow-black/5'
       }`}
     >
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
@@ -208,7 +208,7 @@ export default function Header({
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden border-b border-slate-200 dark:border-white/10 glass-panel backdrop-blur-xl overflow-hidden"
+            className="lg:hidden border-b border-slate-200 dark:border-white/10 bg-white/98 dark:bg-[#060919]/98 backdrop-blur-2xl shadow-2xl overflow-hidden"
           >
             <div className="px-4 pt-2 pb-6 space-y-2">
               {navItems.map((item) => (
