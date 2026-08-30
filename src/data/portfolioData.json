@@ -27,7 +27,7 @@
       "totalCitations": 98,
       "hIndex": 7,
       "i10Index": 5,
-      "lastUpdated": "2026-08-30T11:39:59.024Z"
+      "lastUpdated": "2026-08-30T11:49:03.067Z"
     }
   },
   "credentials": [
@@ -622,6 +622,7 @@
     {
       "category": "Academic & Research Software",
       "items": [
+        "AI Research Tools & Claude (Data Analytics & Rapid Prototyping)",
         "Design-Expert® (Response Surface & Factorial Designs)",
         "Minitab® (Statistical Quality Control & Analysis)",
         "Zotero & Mendeley Reference Managers",
@@ -938,6 +939,13 @@
       "organizer": "CLHRD, Mangalore",
       "date": "3–8 August 2006",
       "category": "workshop_fdp"
+    },
+    {
+      "title": "AI Tools & Claude Workshop (AI-Assisted Presentations, Data Analytics & Code Automation)",
+      "role": "AI Tools Workshop",
+      "organizer": "be10x (Aditya Goenka & Aditya Kachave)",
+      "date": "30 August 2026",
+      "category": "certificate"
     },
     {
       "title": "General Course on Intellectual Property",
