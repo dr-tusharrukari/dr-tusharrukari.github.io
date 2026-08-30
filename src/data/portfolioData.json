@@ -27,7 +27,7 @@
       "totalCitations": 98,
       "hIndex": 7,
       "i10Index": 5,
-      "lastUpdated": "2026-08-30T07:29:03.908Z"
+      "lastUpdated": "2026-08-30T11:39:59.024Z"
     }
   },
   "credentials": [
@@ -465,7 +465,7 @@
       "publisher": "Pee Vee Books (S. Vikas and Company)",
       "year": "2023",
       "isbn": "978-1-5433-4657-2",
-      "coverImage": "./books/01.svg",
+      "coverImage": "./books/01.jpg",
       "description": "Academic textbook strictly framed under the Education Regulation 2020 (ER 2020) syllabus prescribed for D. Pharmacy, Second Year by the Pharmacy Council of India (PCI). Covers foundational biomolecules, metabolic cycles, clinical pathology diagnostic principles, and biochemical evaluation techniques.",
       "coAuthors": [
         "Pallavi L. Phalke",
@@ -481,7 +481,7 @@
       "publisher": "Technical Publications",
       "year": "2022",
       "isbn": "978-81-9479-932-0",
-      "coverImage": "./books/02.svg",
+      "coverImage": "./books/02.jpg",
       "description": "Comprehensive textbook designed in strict accordance with the PCI Syllabus for B-Pharmacy (First Edition, May 2022). Covers drug absorption mechanisms, biological barriers, ADME processes, compartment modeling, non-linear pharmacokinetics, and clinical bioequivalence.",
       "coAuthors": [
         "Vipul A. Sansare",
@@ -495,7 +495,7 @@
       "publisher": "LAP LAMBERT Academic Publishing",
       "year": "2013",
       "isbn": "978-3-659-35689-6",
-      "coverImage": "./books/03.svg",
+      "coverImage": "./books/03.jpg",
       "description": "Academic research monograph on the formulation, enteric polymer coating, and in-vitro dissolution kinetics of delayed-release esomeprazole magnesium tablets to prevent gastric acid degradation and maximize targeted bioavailability.",
       "coAuthors": [
         "Tushar Rukari"
