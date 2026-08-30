@@ -361,19 +361,21 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                   className="group relative p-6 rounded-2xl glass-card glass-card-hover transition-all duration-300 shadow-md flex flex-col justify-between overflow-hidden"
                 >
                   <div className="space-y-4 min-w-0">
-                    {/* Header badge & icon */}
-                    <div className="flex flex-wrap items-center justify-between gap-2 min-w-0">
-                      <div className="flex items-center gap-2 min-w-0 flex-1">
+                    {/* Header badge & icon - Stacks cleanly on mobile, side-by-side on desktop */}
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-1">
+                      <div className="flex items-center gap-2 min-w-0">
                         <div className="p-1.5 rounded-lg bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-brand-primary group-hover:text-brand-accent transition-colors duration-300 shrink-0">
                           {getCategoryIcon(item.category)}
                         </div>
-                        <span className="text-[10px] font-mono text-slate-500 dark:text-gray-400 uppercase tracking-wider leading-tight">
+                        <span className="text-[11px] font-mono font-medium text-slate-500 dark:text-gray-400 uppercase tracking-wider">
                           {getCategoryTitle(item.category)}
                         </span>
                       </div>
-                      <span className={`px-2.5 py-1 text-[10px] font-mono font-semibold rounded-full text-center max-w-full break-words ${getCategoryBadgeColor(item.category)}`}>
-                        {item.role}
-                      </span>
+                      <div className="self-start sm:self-auto">
+                        <span className={`inline-block px-3 py-1 text-[11px] font-mono font-semibold rounded-full ${getCategoryBadgeColor(item.category)}`}>
+                          {item.role}
+                        </span>
+                      </div>
                     </div>
 
                     {/* Engagement Title */}
