@@ -57,6 +57,17 @@ export default function Contact({ personal }: ContactProps) {
     return `https://formspree.io/f/${trimmed}`;
   };
 
+  // Helper to mask email address for anti-scraping and privacy
+  const maskEmail = (email: string): string => {
+    if (!email || !email.includes('@')) return 't•••••••@gmail.com';
+    const [localPart, domain] = email.split('@');
+    if (localPart.length <= 4) {
+      return `${localPart[0]}••••@${domain}`;
+    }
+    const masked = `${localPart.slice(0, 2)}${'•'.repeat(Math.max(4, localPart.length - 4))}${localPart.slice(-2)}`;
+    return `${masked}@${domain}`;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage(null);
@@ -117,7 +128,7 @@ export default function Contact({ personal }: ContactProps) {
     } catch (err: any) {
       console.error('Formspree dispatch error:', err);
       setStatus('error');
-      setErrorMessage(err.message || 'Transmission failed. You can also email directly to ' + personal.email);
+      setErrorMessage(err.message || 'Transmission failed. Please submit again or connect via LinkedIn.');
     }
   };
 
@@ -252,7 +263,7 @@ export default function Contact({ personal }: ContactProps) {
                     </span>
                   </h3>
                   <p className="text-xs text-gray-400">
-                    Direct notification to <span className="font-mono text-brand-primary">{personal.email}</span>
+                    Direct notification to <span className="font-mono text-brand-primary">{maskEmail(personal.email)}</span>
                   </p>
                 </div>
 
@@ -327,13 +338,13 @@ export default function Contact({ personal }: ContactProps) {
                 {status === 'success' && (
                   <div className="flex items-center gap-2.5 p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium animate-fade-in">
                     <CheckCircle2 className="w-4 h-4 shrink-0" />
-                    <span>Inquiry transmitted successfully! Dr. Rukari has been notified at {personal.email} and will respond promptly.</span>
+                    <span>Inquiry transmitted successfully! Dr. Rukari has been notified directly and will respond promptly.</span>
                   </div>
                 )}
                 {status === 'error' && (
                   <div className="flex items-center gap-2.5 p-3.5 rounded-xl bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-medium animate-fade-in">
                     <AlertCircle className="w-4 h-4 shrink-0" />
-                    <span>{errorMessage || 'Failed to submit inquiry. Please try again or email directly.'}</span>
+                    <span>{errorMessage || 'Failed to submit inquiry. Please try again or reach out through LinkedIn.'}</span>
                   </div>
                 )}
 
@@ -345,7 +356,7 @@ export default function Contact({ personal }: ContactProps) {
                   {status === 'submitting' ? (
                     <>
                       <div className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin"></div>
-                      <span>Dispatching to {personal.email}...</span>
+                      <span>Dispatching inquiry securely...</span>
                     </>
                   ) : (
                     <>
@@ -384,10 +395,17 @@ export default function Contact({ personal }: ContactProps) {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-200">Direct Email Contact</h4>
-                    <a href={`mailto:${personal.email}`} className="text-brand-primary hover:underline font-mono font-medium">
-                      {personal.email}
-                    </a>
-                    <p className="text-xs text-gray-500 mt-0.5">Checked daily during academic working hours.</p>
+                    <div className="flex flex-wrap items-center gap-2 mt-1">
+                      <span className="text-brand-primary font-mono font-medium text-xs sm:text-sm bg-white/5 border border-white/10 px-2.5 py-1 rounded-lg">
+                        {maskEmail(personal.email)}
+                      </span>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                        Protected Inbox
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-500 mt-1.5">
+                      Protected against automated web scrapers. Please submit your inquiry using the SSL-encrypted form for direct dispatch.
+                    </p>
                   </div>
                 </div>
 
