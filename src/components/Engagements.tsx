@@ -191,19 +191,19 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
   const getCategoryTitle = (category: string) => {
     switch (category) {
       case 'representation':
-        return 'Conference & Research Representation';
+        return 'Conference Presentation';
       case 'workshop_fdp':
-        return 'Faculty Development Program / Workshop';
+        return 'FDP & Workshop';
       case 'expert_talk':
-        return 'Invited Session / Expert Lecture Delivered';
+        return 'Invited / Expert Talk';
       case 'evaluator_judge':
-        return 'Jury Panel / Competition Evaluator';
+        return 'Jury & Evaluation';
       case 'felicitation':
-        return 'Felicitation & Public Recognition';
+        return 'Felicitation & Recognition';
       case 'governance':
-        return 'University Board & Examination Governance';
+        return 'University Governance';
       case 'certificate':
-        return 'Professional Value-Added Certificate Course';
+        return 'Certificate Course';
       default:
         return 'Academic Activity';
     }
@@ -224,71 +224,71 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
               <Sparkles className="w-4 h-4" />
               <span>Professional Footprint</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 dark:text-white tracking-tight">
               Academic & Scholarly Engagements
             </h2>
-            <p className="text-gray-400 text-sm max-w-2xl leading-relaxed">
+            <p className="text-slate-600 dark:text-gray-400 text-sm max-w-2xl leading-relaxed">
               Explore Dr. Rukari's dynamic profile beyond classroom lecturing: representing research internationally, delivering state-wide professional trainings, judging national competitions, and steering university examination bodies.
             </p>
           </div>
         </div>
 
-        {/* Premium Bento Stats Grid with Gemini Glowing Borders */}
+        {/* Premium Bento Stats Grid with Glowing Borders */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-white/5">
+          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-slate-200/60 dark:border-white/5">
             <div className="absolute -right-2 -bottom-2 text-indigo-500/10 group-hover:scale-110 transition-transform duration-500">
               <Presentation className="w-24 h-24" />
             </div>
             <div className="p-2.5 bg-indigo-500/10 rounded-xl w-fit mb-4">
-              <Presentation className="w-5 h-5 text-indigo-400" />
+              <Presentation className="w-5 h-5 text-indigo-500 dark:text-indigo-400" />
             </div>
-            <span className="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">Conference Papers</span>
-            <span className="text-2xl sm:text-3xl font-display font-extrabold text-white">{stats.representation} Delivered</span>
+            <span className="text-[11px] font-mono text-slate-500 dark:text-gray-400 uppercase tracking-wider block">Conference Papers</span>
+            <span className="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white">{stats.representation} Delivered</span>
           </div>
 
-          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-white/5">
+          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-slate-200/60 dark:border-white/5">
             <div className="absolute -right-2 -bottom-2 text-purple-500/10 group-hover:scale-110 transition-transform duration-500">
               <GraduationCap className="w-24 h-24" />
             </div>
             <div className="p-2.5 bg-purple-500/10 rounded-xl w-fit mb-4">
-              <GraduationCap className="w-5 h-5 text-purple-400" />
+              <GraduationCap className="w-5 h-5 text-purple-500 dark:text-purple-400" />
             </div>
-            <span className="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">FDPs & Trainings</span>
-            <span className="text-2xl sm:text-3xl font-display font-extrabold text-white">{stats.workshop_fdp} Completed</span>
+            <span className="text-[11px] font-mono text-slate-500 dark:text-gray-400 uppercase tracking-wider block">FDPs & Trainings</span>
+            <span className="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white">{stats.workshop_fdp} Completed</span>
           </div>
 
-          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-white/5">
+          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-slate-200/60 dark:border-white/5">
             <div className="absolute -right-2 -bottom-2 text-pink-500/10 group-hover:scale-110 transition-transform duration-500">
               <Mic className="w-24 h-24" />
             </div>
             <div className="p-2.5 bg-pink-500/10 rounded-xl w-fit mb-4">
-              <Mic className="w-5 h-5 text-pink-400" />
+              <Mic className="w-5 h-5 text-pink-500 dark:text-pink-400" />
             </div>
-            <span className="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">Expert Talks Delivered</span>
-            <span className="text-2xl sm:text-3xl font-display font-extrabold text-white">{stats.expert_talk} Guest Sessions</span>
+            <span className="text-[11px] font-mono text-slate-500 dark:text-gray-400 uppercase tracking-wider block">Expert Talks Delivered</span>
+            <span className="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white">{stats.expert_talk} Guest Sessions</span>
           </div>
 
-          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-white/5">
+          <div className="p-5 rounded-2xl glass-card relative overflow-hidden group hover:scale-[1.02] transition-all duration-300 border border-slate-200/60 dark:border-white/5">
             <div className="absolute -right-2 -bottom-2 text-emerald-500/10 group-hover:scale-110 transition-transform duration-500">
               <Scale className="w-24 h-24" />
             </div>
             <div className="p-2.5 bg-emerald-500/10 rounded-xl w-fit mb-4">
-              <Scale className="w-5 h-5 text-emerald-400" />
+              <Scale className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />
             </div>
-            <span className="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">Judging & Referees</span>
-            <span className="text-2xl sm:text-3xl font-display font-extrabold text-white">{stats.evaluator_judge} Panels</span>
+            <span className="text-[11px] font-mono text-slate-500 dark:text-gray-400 uppercase tracking-wider block">Judging & Referees</span>
+            <span className="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white">{stats.evaluator_judge} Panels</span>
           </div>
         </div>
 
         {/* Search Bar Block */}
         <div className="relative mb-8 max-w-xl">
-          <Search className="absolute left-4 top-3.5 h-4 w-4 text-gray-400" />
+          <Search className="absolute left-4 top-3.5 h-4 w-4 text-slate-400 dark:text-gray-400" />
           <input
             type="text"
             placeholder="Search workshops, conferences, awards, governance, or locations..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 glass-input rounded-xl text-sm placeholder-gray-500 focus:outline-none transition-all"
+            className="w-full pl-11 pr-4 py-3 glass-input rounded-xl text-sm placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none transition-all"
           />
         </div>
 
@@ -304,14 +304,14 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                   onClick={() => setSelectedCategory(tab.id)}
                   className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-300 border cursor-pointer hover:scale-[1.03] active:scale-[0.97] ${
                     isSelected
-                      ? 'bg-gradient-to-r from-brand-primary/10 to-brand-accent/10 border-brand-primary text-white shadow-lg shadow-brand-primary/5'
-                      : 'bg-white/5 border-white/10 text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20'
+                      ? 'bg-gradient-to-r from-brand-primary/10 to-brand-accent/10 border-brand-primary text-brand-primary dark:text-white shadow-lg shadow-brand-primary/5'
+                      : 'bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-white/10'
                   }`}
                 >
                   <TabIcon className={`w-3.5 h-3.5 ${tab.color}`} />
                   <span>{tab.label}</span>
                   {tab.count !== undefined && (
-                    <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/10 text-slate-300">
+                    <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-slate-300">
                       {tab.count}
                     </span>
                   )}
@@ -323,15 +323,15 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
 
         {/* Active Filters Summary */}
         {(searchTerm || selectedCategory !== 'All') && (
-          <div className="flex flex-wrap items-center gap-2 mb-6 text-xs text-gray-400">
+          <div className="flex flex-wrap items-center gap-2 mb-6 text-xs text-slate-600 dark:text-gray-400">
             <span>Active filters:</span>
             {selectedCategory !== 'All' && (
-              <span className="bg-gray-900 border border-gray-800 px-2.5 py-1 rounded-md text-brand-primary font-mono">
+              <span className="bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800 px-2.5 py-1 rounded-md text-brand-primary font-mono">
                 Category: {tabs.find(t => t.id === selectedCategory)?.label}
               </span>
             )}
             {searchTerm && (
-              <span className="bg-gray-900 border border-gray-800 px-2.5 py-1 rounded-md text-brand-accent font-mono">
+              <span className="bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800 px-2.5 py-1 rounded-md text-brand-accent font-mono">
                 Query: "{searchTerm}"
               </span>
             )}
@@ -340,7 +340,7 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                 setSearchTerm('');
                 setSelectedCategory('All');
               }}
-              className="text-brand-highlight hover:underline ml-1 font-semibold"
+              className="text-brand-highlight hover:underline ml-1 font-semibold cursor-pointer"
             >
               Reset Filters
             </button>
@@ -358,46 +358,46 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.25, delay: Math.min(idx * 0.04, 0.4) }}
-                  className="group relative p-6 rounded-2xl glass-card glass-card-hover transition-all duration-300 shadow-md flex flex-col justify-between"
+                  className="group relative p-6 rounded-2xl glass-card glass-card-hover transition-all duration-300 shadow-md flex flex-col justify-between overflow-hidden"
                 >
-                  <div className="space-y-4">
+                  <div className="space-y-4 min-w-0">
                     {/* Header badge & icon */}
-                    <div className="flex items-center justify-between gap-4">
-                      <div className="flex items-center gap-2">
-                        <div className="p-1.5 rounded-lg bg-white/5 border border-white/10 text-brand-primary group-hover:text-brand-accent transition-colors duration-300">
+                    <div className="flex flex-wrap items-center justify-between gap-2 min-w-0">
+                      <div className="flex items-center gap-2 min-w-0 flex-1">
+                        <div className="p-1.5 rounded-lg bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-brand-primary group-hover:text-brand-accent transition-colors duration-300 shrink-0">
                           {getCategoryIcon(item.category)}
                         </div>
-                        <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest block">
+                        <span className="text-[10px] font-mono text-slate-500 dark:text-gray-400 uppercase tracking-wider leading-tight">
                           {getCategoryTitle(item.category)}
                         </span>
                       </div>
-                      <span className={`px-2.5 py-1 text-[10px] font-mono font-semibold rounded-full shrink-0 ${getCategoryBadgeColor(item.category)}`}>
+                      <span className={`px-2.5 py-1 text-[10px] font-mono font-semibold rounded-full text-center max-w-full break-words ${getCategoryBadgeColor(item.category)}`}>
                         {item.role}
                       </span>
                     </div>
 
                     {/* Engagement Title */}
-                    <h3 className="font-display font-semibold text-base sm:text-lg text-white group-hover:text-brand-primary transition-colors duration-300 leading-snug">
+                    <h3 className="font-display font-semibold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-brand-primary transition-colors duration-300 leading-snug break-words">
                       {item.title}
                     </h3>
 
                     {/* Institutional Organizer / Host */}
-                    <div className="flex items-start gap-2.5 text-sm text-slate-300">
-                      <Building2 className="w-4 h-4 text-gray-500 shrink-0 mt-0.5" />
-                      <span className="leading-relaxed">{item.organizer}</span>
+                    <div className="flex items-start gap-2.5 text-sm text-slate-700 dark:text-slate-300">
+                      <Building2 className="w-4 h-4 text-slate-400 dark:text-gray-500 shrink-0 mt-0.5" />
+                      <span className="leading-relaxed break-words">{item.organizer}</span>
                     </div>
                   </div>
 
                   {/* Metadata: Date and Location */}
-                  <div className="flex flex-wrap items-center justify-between gap-4 pt-5 mt-5 border-t border-white/10 text-xs font-mono text-gray-400">
+                  <div className="flex flex-wrap items-center justify-between gap-4 pt-5 mt-5 border-t border-slate-200/60 dark:border-white/10 text-xs font-mono text-slate-500 dark:text-gray-400">
                     <span className="inline-flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-gray-500" />
+                      <Calendar className="w-3.5 h-3.5 text-slate-400 dark:text-gray-500" />
                       <span>{item.date}</span>
                     </span>
 
                     {item.location && (
                       <span className="inline-flex items-center gap-1.5">
-                        <MapPin className="w-3.5 h-3.5 text-gray-500" />
+                        <MapPin className="w-3.5 h-3.5 text-slate-400 dark:text-gray-500" />
                         <span>{item.location}</span>
                       </span>
                     )}
@@ -413,8 +413,8 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                 <div className="p-3 bg-white/5 rounded-full w-fit mx-auto">
                   <Sparkles className="w-6 h-6 text-slate-500" />
                 </div>
-                <h4 className="font-display font-bold text-white">No engagements matched</h4>
-                <p className="text-gray-400 text-sm max-w-md mx-auto">
+                <h4 className="font-display font-bold text-slate-900 dark:text-white">No engagements matched</h4>
+                <p className="text-slate-600 dark:text-gray-400 text-sm max-w-md mx-auto">
                   We couldn't find any activities matching "{searchTerm}" under this category. Try adjusting your query or resetting filters.
                 </p>
                 <button
