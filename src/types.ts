@@ -20,6 +20,10 @@ export interface PersonalInfo {
   googleScholar: string;
   orcid: string;
   scopus: string;
+  webOfScience?: string;
+  vidwan?: string;
+  researchGate?: string;
+  academiaEdu?: string;
   bio: string;
   aboutStatement: string;
   profileImage?: string;

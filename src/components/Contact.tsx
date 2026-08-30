@@ -12,7 +12,11 @@ import {
   AlertCircle, 
   ShieldCheck,
   Clock,
-  Lock
+  Lock,
+  Database,
+  BadgeCheck,
+  FlaskConical,
+  BookOpen
 } from 'lucide-react';
 import { PersonalInfo } from '../types';
 
@@ -123,28 +127,56 @@ export default function Contact({ personal }: ContactProps) {
       sub: 'Research Citations',
       url: personal.googleScholar,
       icon: GraduationCap,
-      color: 'hover:text-blue-400 dark:hover:text-blue-300',
+      color: 'hover:text-blue-500 dark:hover:text-blue-400',
     },
     {
-      label: 'ORCID iD',
-      sub: 'Open Researcher Registry',
-      url: personal.orcid,
-      icon: Globe,
-      color: 'hover:text-emerald-400 dark:hover:text-emerald-300',
+      label: 'Web of Science',
+      sub: 'ID: KFP-9866-2024',
+      url: personal.webOfScience || 'https://www.webofscience.com/wos/author/record/KFP-9866-2024',
+      icon: Database,
+      color: 'hover:text-purple-500 dark:hover:text-purple-400',
+    },
+    {
+      label: 'Vidwan Expert',
+      sub: 'INFLIBNET ID: 713796',
+      url: personal.vidwan || 'https://vidwan.inflibnet.ac.in/profile/713796',
+      icon: BadgeCheck,
+      color: 'hover:text-teal-500 dark:hover:text-teal-400',
+    },
+    {
+      label: 'ResearchGate',
+      sub: 'Scientific Publications',
+      url: personal.researchGate || 'https://www.researchgate.net/profile/Tushar-Rukari',
+      icon: FlaskConical,
+      color: 'hover:text-cyan-500 dark:hover:text-cyan-400',
+    },
+    {
+      label: 'Academia.edu',
+      sub: 'Research Papers',
+      url: personal.academiaEdu || 'https://independent.academia.edu/TusharRukari',
+      icon: BookOpen,
+      color: 'hover:text-rose-500 dark:hover:text-rose-400',
     },
     {
       label: 'Scopus Profile',
-      sub: 'Abstract Citation Database',
+      sub: 'Author ID: 55617584300',
       url: personal.scopus,
       icon: Layers,
-      color: 'hover:text-cyan-400 dark:hover:text-cyan-300',
+      color: 'hover:text-amber-500 dark:hover:text-amber-400',
+    },
+    {
+      label: 'ORCID iD',
+      sub: '0000-0002-8320-0950',
+      url: personal.orcid,
+      icon: Globe,
+      color: 'hover:text-emerald-500 dark:hover:text-emerald-400',
     },
     {
       label: 'LinkedIn Profile',
       sub: 'Professional Network',
       url: personal.linkedin,
       icon: Linkedin,
-      color: 'hover:text-indigo-400 dark:hover:text-indigo-300',
+      color: 'hover:text-indigo-500 dark:hover:text-indigo-400',
     },
   ];
 
@@ -162,16 +194,16 @@ export default function Contact({ personal }: ContactProps) {
             <Mail className="w-4 h-4" />
             <span>Connect & Partner</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 dark:text-white tracking-tight">
             Academic Collaboration
           </h2>
-          <p className="text-gray-400 text-sm">
+          <p className="text-slate-600 dark:text-gray-400 text-sm">
             Interested in joint research projects, patent licensing, guest lectures, or academic guidance? Send an inquiry directly to Dr. Rukari's inbox.
           </p>
         </div>
 
         {/* Dynamic Citation DB Link cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {dbLinks.map((link) => {
             const Icon = link.icon;
             return (
@@ -179,23 +211,24 @@ export default function Contact({ personal }: ContactProps) {
                 key={link.label}
                 href={link.url}
                 target="_blank"
+                rel="noopener noreferrer"
                 referrerPolicy="no-referrer"
                 className={`group p-5 rounded-2xl glass-card glass-card-hover transition-all duration-300 flex flex-col justify-between ${link.color}`}
               >
                 <div className="space-y-3">
-                  <div className="p-2.5 rounded-xl glass-badge text-gray-400 group-hover:text-inherit transition-colors w-fit">
+                  <div className="p-2.5 rounded-xl glass-badge text-slate-600 dark:text-gray-400 group-hover:text-inherit transition-colors w-fit">
                     <Icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-display font-bold text-sm text-gray-200 group-hover:text-inherit transition-colors leading-snug">
+                    <h4 className="font-display font-bold text-sm text-slate-900 dark:text-gray-200 group-hover:text-inherit transition-colors leading-snug">
                       {link.label}
                     </h4>
-                    <p className="text-[10px] font-mono text-gray-500">{link.sub}</p>
+                    <p className="text-[10px] font-mono text-slate-500 dark:text-gray-400 mt-0.5">{link.sub}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-1 text-[11px] font-mono font-medium text-slate-500 pt-3 border-t border-white/10 mt-3">
+                <div className="flex items-center justify-between text-[11px] font-mono font-medium text-slate-500 dark:text-slate-400 pt-3 border-t border-slate-200/60 dark:border-white/10 mt-3">
                   <span>Explore Index</span>
-                  <ExternalLink className="w-3 h-3 text-gray-600 group-hover:text-inherit" />
+                  <ExternalLink className="w-3 h-3 text-slate-400 dark:text-gray-500 group-hover:text-inherit transition-colors" />
                 </div>
               </a>
             );
