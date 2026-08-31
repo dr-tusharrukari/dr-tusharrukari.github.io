@@ -1,7 +1,9 @@
 {
-  "totalVisits": 1548,
-  "uniqueVisitors": 1184,
-  "todayVisits": 32,
-  "lastVisitedAt": "2026-08-28T10:20:00.000Z",
-  "dailyCounts": {}
+  "totalVisits": 1585,
+  "uniqueVisitors": 1204,
+  "todayVisits": 37,
+  "lastVisitedAt": "2026-08-31T10:19:10.139Z",
+  "dailyCounts": {
+    "2026-08-31": 37
+  }
 }

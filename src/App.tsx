@@ -97,8 +97,25 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // Record page impression
+    // Record initial page impression
     recordVisitorHit();
+
+    // Periodic real-time visitor count synchronization every 45 seconds
+    const visitorInterval = setInterval(() => {
+      fetchSynchronizedVisitorStats()
+        .then((latest) => setVisitorStats(latest))
+        .catch(() => {});
+    }, 45000);
+
+    // Sync on tab re-focus or visibility change
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        fetchSynchronizedVisitorStats()
+          .then((latest) => setVisitorStats(latest))
+          .catch(() => {});
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
     // Fetch live portfolio data with updated citations from Google Scholar
     fetch('/api/citations')
@@ -120,6 +137,11 @@ export default function App() {
       .finally(() => {
         setIsLoading(false);
       });
+
+    return () => {
+      clearInterval(visitorInterval);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
   }, [recordVisitorHit]);
 
   const handleExplore = () => {

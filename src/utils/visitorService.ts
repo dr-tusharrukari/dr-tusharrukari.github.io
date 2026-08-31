@@ -8,21 +8,12 @@ const BASE_STATS: VisitorStats = {
   lastVisitedAt: new Date().toISOString()
 };
 
-const STORAGE_KEY = 'tushar_portfolio_visitor_stats_v3';
-const SESSION_HIT_KEY = 'tushar_portfolio_session_recorded_v3';
+const STORAGE_KEY = 'tushar_portfolio_visitor_stats_v4';
+const SESSION_HIT_KEY = 'tushar_portfolio_session_recorded_v4';
 
-// Clear legacy cached counts if present
-try {
-  localStorage.removeItem('tushar_static_views');
-  localStorage.removeItem('tushar_static_unique');
-  localStorage.removeItem('tushar_portfolio_visitor_stats');
-  localStorage.removeItem('tushar_portfolio_visitor_stats_v2');
-} catch {
-  // Ignore
-}
-
-// Public distributed cloud counter namespace for real-time GitHub Pages & Live deployments
-const CLOUD_COUNTER_ENDPOINT = 'https://api.counterapi.dev/v1/dr-tusharrukari-academic/visits';
+// High-availability public cloud hit counter endpoint for static GitHub Pages hosting
+const COUNTAPI_BASE = 'https://countapi.mileshilliard.com/api/v1';
+const COUNTAPI_KEY = 'dr-tusharrukari-academic-visits';
 
 export function getCachedVisitorStats(): VisitorStats {
   try {
@@ -67,12 +58,12 @@ export async function fetchSynchronizedVisitorStats(): Promise<VisitorStats> {
     // Server is not running (e.g. GitHub Pages static hosting)
   }
 
-  // 2. Global Cloud Counter for static GitHub Pages hosting
+  // 2. Global Cloud Counter for static GitHub Pages hosting (countapi.mileshilliard.com)
   try {
-    const cloudRes = await fetch(CLOUD_COUNTER_ENDPOINT, { signal: AbortSignal.timeout(3000) });
+    const cloudRes = await fetch(`${COUNTAPI_BASE}/get/${COUNTAPI_KEY}`, { signal: AbortSignal.timeout(3000) });
     if (cloudRes.ok) {
       const cloudData = await cloudRes.json();
-      const cloudCount = typeof cloudData.count === 'number' ? cloudData.count : 0;
+      const cloudCount = typeof cloudData.value === 'number' ? cloudData.value : 0;
       
       const computedTotal = Math.max(current.totalVisits, BASE_STATS.totalVisits + cloudCount);
       const computedUnique = Math.max(current.uniqueVisitors, Math.round(computedTotal * 0.76));
@@ -102,7 +93,7 @@ export async function recordVisitorHitEvent(): Promise<VisitorStats> {
   const current = getCachedVisitorStats();
   const sessionRecorded = sessionStorage.getItem(SESSION_HIT_KEY);
 
-  // Attempt backend hit
+  // 1. Attempt backend hit if Node server is active
   try {
     const isNewSession = !sessionRecorded;
     const res = await fetch('/api/visitors/hit', {
@@ -120,17 +111,17 @@ export async function recordVisitorHitEvent(): Promise<VisitorStats> {
       }
     }
   } catch {
-    // Server offline (GitHub Pages)
+    // Server offline (e.g. GitHub Pages static deployment)
   }
 
-  // Increment cloud counter on GitHub Pages if not recorded this session
+  // 2. Increment cloud counter on GitHub Pages if not recorded this session
   if (!sessionRecorded) {
     sessionStorage.setItem(SESSION_HIT_KEY, 'true');
     try {
-      const upRes = await fetch(`${CLOUD_COUNTER_ENDPOINT}/up`, { signal: AbortSignal.timeout(3000) });
-      if (upRes.ok) {
-        const cloudData = await upRes.json();
-        const cloudCount = typeof cloudData.count === 'number' ? cloudData.count : 1;
+      const hitRes = await fetch(`${COUNTAPI_BASE}/hit/${COUNTAPI_KEY}`, { signal: AbortSignal.timeout(3000) });
+      if (hitRes.ok) {
+        const cloudData = await hitRes.json();
+        const cloudCount = typeof cloudData.value === 'number' ? cloudData.value : 1;
         const computedTotal = Math.max(current.totalVisits + 1, BASE_STATS.totalVisits + cloudCount);
         const computedUnique = Math.max(current.uniqueVisitors + 1, Math.round(computedTotal * 0.76));
         const computedToday = Math.max(BASE_STATS.todayVisits + 1, (cloudCount % 35) + BASE_STATS.todayVisits);
@@ -161,3 +152,4 @@ export async function recordVisitorHitEvent(): Promise<VisitorStats> {
 
   return fetchSynchronizedVisitorStats();
 }
+

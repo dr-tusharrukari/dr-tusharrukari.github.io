@@ -238,7 +238,7 @@ export default function Header({
                     <span>Live Visitor Analytics</span>
                   </div>
                   <span className="font-semibold text-brand-primary dark:text-indigo-300">
-                    {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,582'}
+                    {visitorStats?.totalVisits ? visitorStats.totalVisits.toLocaleString() : '1,584'}
                   </span>
                 </button>
               </div>
