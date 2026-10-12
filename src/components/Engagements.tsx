@@ -14,7 +14,8 @@ import {
   Building2,
   BookmarkCheck,
   UserCheck,
-  GraduationCap
+  GraduationCap,
+  ExternalLink
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { EngagementItem } from '../types';
@@ -388,6 +389,27 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                       <Building2 className="w-4 h-4 text-slate-400 dark:text-gray-500 shrink-0 mt-0.5" />
                       <span className="leading-relaxed break-words">{item.organizer}</span>
                     </div>
+
+                    {/* Description or Manuscript Detail if available */}
+                    {item.description && (
+                      <div className="pt-2">
+                        <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed bg-slate-100/70 dark:bg-white/[0.04] p-3 rounded-xl border border-slate-200/70 dark:border-white/10 space-y-1">
+                          {item.description.toLowerCase().includes('manuscript') ? (
+                            <>
+                              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-brand-primary dark:text-brand-accent flex items-center gap-1.5">
+                                <FileCheck className="w-3.5 h-3.5" />
+                                Manuscript Information
+                              </span>
+                              <p className="font-medium text-slate-800 dark:text-slate-200 leading-normal break-words">
+                                {item.description}
+                              </p>
+                            </>
+                          ) : (
+                            <p className="break-words">{item.description}</p>
+                          )}
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* Metadata: Date and Location */}
@@ -397,12 +419,30 @@ export default function Engagements({ engagements = [] }: EngagementsProps) {
                       <span>{item.date}</span>
                     </span>
 
-                    {item.location && (
-                      <span className="inline-flex items-center gap-1.5">
-                        <MapPin className="w-3.5 h-3.5 text-slate-400 dark:text-gray-500" />
-                        <span>{item.location}</span>
-                      </span>
-                    )}
+                    <div className="flex flex-wrap items-center gap-3">
+                      {item.location && (
+                        <span className="inline-flex items-center gap-1.5">
+                          {item.location.toLowerCase().includes('cert') || item.location.toLowerCase().includes('verified') ? (
+                            <FileCheck className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
+                          ) : (
+                            <MapPin className="w-3.5 h-3.5 text-slate-400 dark:text-gray-500" />
+                          )}
+                          <span>{item.location}</span>
+                        </span>
+                      )}
+
+                      {item.link && (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-brand-primary dark:text-brand-accent hover:underline font-semibold"
+                        >
+                          <span>Verify</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </motion.div>
               ))

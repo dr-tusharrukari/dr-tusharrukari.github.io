@@ -166,6 +166,7 @@ export interface EngagementItem {
   location?: string;
   category: 'representation' | 'workshop_fdp' | 'expert_talk' | 'evaluator_judge' | 'felicitation' | 'governance' | 'certificate';
   description?: string;
+  link?: string;
 }
 
 export interface VisitorStats {

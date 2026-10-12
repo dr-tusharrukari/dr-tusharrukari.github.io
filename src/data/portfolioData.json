@@ -24,10 +24,10 @@
     "aboutStatement": "I believe in bridging the gap between textbook and real-world clinical applications. My research concentrates on design and development of innovative, scalable, and biocompatible drug delivery carriers to address unmet clinical challenges, especially in novel drug delivery and vesicular carrier systems. As a mentor, I aim to foster curiosity and research-driven thinking among future pharmacy leaders.",
     "profileImage": "./profile.jpg",
     "googleScholarStats": {
-      "totalCitations": 98,
+      "totalCitations": 99,
       "hIndex": 7,
       "i10Index": 5,
-      "lastUpdated": "2026-08-31T10:05:00.881Z"
+      "lastUpdated": "2026-10-12T08:39:36.593Z"
     }
   },
   "credentials": [
@@ -296,7 +296,7 @@
       "year": "2019",
       "category": "International Journal",
       "link": "https://scholar.google.co.in/citations?user=rEsyLGgAAAAJ&hl=en",
-      "citations": 19,
+      "citations": 20,
       "tags": [
         "Emulgel",
         "Topical Delivery",
@@ -1005,6 +1005,22 @@
       "category": "certificate"
     },
     {
+      "title": "Certificate of Reviewing — in recognition of peer review contribution for manuscript 'Development and Optimization of Spray-Dried Soluplus Micelles for Enhanced Solubility and Stability of Enzalutamide, an Androgen Receptor Inhibitor'",
+      "role": "Peer Review Recognition",
+      "organizer": "Research Journal of Pharmacy and Technology (A&V Publications)",
+      "date": "12 October 2026",
+      "location": "Cert ID: 2610121221115991",
+      "category": "felicitation"
+    },
+    {
+      "title": "Certificate of Reviewing — in recognition of peer review contribution for manuscript 'Design, Optimization and In Vitro Evaluation of a Second-Generation Superporous Hydrogel for Gastroretentive Sustained Release of Deferiprone'",
+      "role": "Peer Review Recognition",
+      "organizer": "Research Journal of Pharmacy and Technology (A&V Publications)",
+      "date": "12 October 2026",
+      "location": "Cert ID: 2610121224187907",
+      "category": "felicitation"
+    },
+    {
       "title": "Certificate of Excellence in Reviewing — in recognition of an outstanding contribution to the quality of the journal",
       "role": "Reviewer Excellence",
       "organizer": "Asian Journal of Medicine and Health",
@@ -1105,10 +1121,11 @@
       "category": "governance"
     },
     {
-      "title": "Manuscript reviewer for Scopus- and Web of Science-indexed journals (Research Journal of Pharmacy and Technology, Journal of Applied Pharmaceutical Research, etc.)",
+      "title": "Manuscript reviewer for Scopus- and Web of Science-indexed journals (Research Journal of Pharmacy and Technology, Asian Journal of Medicine and Health, Journal of Applied Pharmaceutical Research, etc.)",
       "role": "Peer Reviewer",
       "organizer": "Scopus & Web of Science Indexed Journals",
-      "date": "06 Manuscripts Reviewed",
+      "date": "08 Manuscripts Reviewed",
+      "location": "Verified Editorial Peer Reviewer",
       "category": "governance"
     },
     {
